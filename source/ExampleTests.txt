@@ -1,0 +1,72 @@
+Name things sensibly to self-documenting: 
+
+  MethodBeingTested_ConditionBeingTested_ExpectedOutcome
+  ------------------------------------------------------
+    SanitizeHexString_ContainsPoundSign_RemovesPoundSign
+    SanitizeHexString_InvalidString_ThrowsException
+    SanitizeHexString_TooManyChars_TrimsStringTo8Chars
+
+
+using System;
+using System.Text;
+
+namespace NamespaceName.ProjectName.Tests
+{
+    using NUnit.Framework;
+
+    [TestFixture]
+    public class TestedClassTests
+    {
+        #region SETUP / BREAKDOWN
+
+        // global data
+
+        // performed once before all tests
+        [TestFixtureSetUp] protected void InitFixture() {}
+
+        // performed once after all tests
+        [TestFixtureTearDown] protected void CleanUpFixture() {}
+
+        // performed before each test
+        [SetUp] protected void InitTest() {}
+
+        // performed after each test
+        [TearDown] protected void CleanUpTest() { }
+
+        #endregion
+
+
+        // the [TestFixture] is inherited
+        public class HexToBytesTests : TestedClassTests
+        {
+            [Test] public void ThrowsExceptionWhen_ArgumentIsNull()
+            {
+                string hex = null;
+                byte[] result;
+                Assert.Throws<ArgumentNullException>( () => result.HexToBytes(hex) );
+                // alternatively
+                // Assert.Throws<ArgumentNullException>( () => result.HexToBytes(null) );
+            }
+
+            [Test] public void ReturnsFirstByteAsRWhen_ArgumentIsRRGGBBString()
+            {
+                string RGBHex = "FF0000";
+                byte[] result = RGBHex.HexToBytes();
+                
+                int R = 255;  // FF
+                                
+                Assert.AreEqual(R, result[0], 
+                "When given a six-char string (RRGGBB), the first byte should be equivalent to the integer equivalent of RR.");
+            }
+
+            [Test] public void GivenEightCharsAsARGB_ReturnsFirstByteAsA()
+            {}
+
+            [Test] public void IfInvalidHexString_ThrowsInvalidArgumentException()
+            {}
+
+            [Test] public void IfValidHexString_DoesNotThrowInvalidArgumentException()
+            {}
+        }
+    }
+}

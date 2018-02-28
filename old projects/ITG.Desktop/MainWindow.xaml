@@ -1,0 +1,63 @@
+﻿<Window x:Class="ITG.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:aDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <aDock:DockingManager x:Name="dockingManager">
+            <aDock:LayoutRoot>
+                <aDock:LayoutPanel Orientation="Horizontal">
+                    <aDock:LayoutAnchorablePaneGroup DockWidth="150" Orientation="Vertical">
+                        <aDock:LayoutAnchorablePane>
+                            <aDock:LayoutAnchorable Title="Toolbox">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+
+                        </aDock:LayoutAnchorablePane>
+                    </aDock:LayoutAnchorablePaneGroup>
+                    <aDock:LayoutDocumentPaneGroup>
+                        <aDock:LayoutDocumentPane>
+                            <aDock:LayoutDocument Title="Designer">
+                                <TextBox/>
+                            </aDock:LayoutDocument>
+                            <aDock:LayoutDocument Title="Data Grid">
+                                <TextBox/>
+                            </aDock:LayoutDocument>
+                        </aDock:LayoutDocumentPane>
+                    </aDock:LayoutDocumentPaneGroup>
+
+                    <aDock:LayoutAnchorablePaneGroup DockWidth="150" Orientation="Vertical">
+                        <aDock:LayoutAnchorablePane>
+                            <aDock:LayoutAnchorable Title="Tool 1">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+                            <aDock:LayoutAnchorable Title="Tool 2">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+                        </aDock:LayoutAnchorablePane>
+                        <aDock:LayoutAnchorablePane>
+                            <aDock:LayoutAnchorable Title="Tool 3">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+                            <aDock:LayoutAnchorable Title="Tool 4">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+                        </aDock:LayoutAnchorablePane>
+                    </aDock:LayoutAnchorablePaneGroup>
+
+                </aDock:LayoutPanel>
+
+                <aDock:LayoutRoot.BottomSide>
+                    <aDock:LayoutAnchorSide>
+                        <aDock:LayoutAnchorGroup>
+                            <aDock:LayoutAnchorable Title="Output">
+                                <TextBox/>
+                            </aDock:LayoutAnchorable>
+                        </aDock:LayoutAnchorGroup>
+                    </aDock:LayoutAnchorSide>
+                </aDock:LayoutRoot.BottomSide>
+            </aDock:LayoutRoot>
+        </aDock:DockingManager>
+    </Grid>
+</Window>

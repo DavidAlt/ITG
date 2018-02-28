@@ -1,0 +1,503 @@
+﻿<Window x:Class="ITG.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:des="clr-namespace:ITG.Desktop.Designer"
+        xmlns:di="clr-namespace:ITG.Desktop.DesignerItems"
+        xmlns:my="clr-namespace:ITG.Desktop"
+        xmlns:utility="clr-namespace:DALT.Utility;assembly=DALT.Utility"
+        xmlns:ad="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:drag="clr-namespace:ITG.Desktop.DragAndDrop"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        SnapsToDevicePixels="True"
+        x:Name="me"
+        Title="Illegitimate Template Generator"
+        WindowState="Maximized"
+        Height="768" Width="1024" d:DataContext="{d:DesignData /SampleData/MainWindowVMSampleData.xaml}">
+
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="New" Executed="NewOnExecuted" />
+        <CommandBinding Command="Open" Executed="OpenOnExecuted" />
+        <CommandBinding Command="Save" Executed="SaveOnExecuted" />
+        <CommandBinding Command="SaveAs" Executed="SaveAsOnExecuted" />
+        <CommandBinding Command="Close" Executed="CloseOnExecuted" />
+        <CommandBinding Command="Cut" CanExecute="CutCanExecute" Executed="CutOnExecuted"/>
+        <CommandBinding Command="Copy" CanExecute="CopyCanExecute" Executed="CopyOnExecuted"/>
+        <CommandBinding Command="Paste" CanExecute="PasteCanExecute" Executed="PasteOnExecuted"/>
+        <CommandBinding Command="Delete" CanExecute="DeleteCanExecute" Executed="DeleteOnExecuted"/>
+        <CommandBinding Command="SelectAll" Executed="SelectAllOnExecuted" />
+        <CommandBinding Command="Help" Executed="HelpOnExecuted" />
+    </Window.CommandBindings>
+
+    <Grid x:Name="windowGrid"
+        MouseLeftButtonUp="windowGrid_OnMouseLeftButtonUp"
+        MouseMove="windowGrid_OnMouseMove">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <my:MainWindowMenu Grid.Row="0" Grid.ColumnSpan="4" />
+
+        <ad:DockingManager x:Name="dockingManager" Grid.Row="1">
+            
+            <!-- LayoutRoot is the outermost container for the LayoutPanel and the AnchorSides -->
+            <ad:LayoutRoot x:Name="layoutRoot">
+
+                <ad:LayoutRoot.BottomSide>
+                    <ad:LayoutAnchorSide>
+                        <ad:LayoutAnchorGroup>
+                            
+                            <ad:LayoutAnchorable Title="Output"
+                                CanClose="False" CanHide="False" CanFloat="False">
+                                <TextBox Text="{Binding AppLog, Mode=OneWay}"/>
+                            </ad:LayoutAnchorable>
+                        
+                        </ad:LayoutAnchorGroup>
+                    </ad:LayoutAnchorSide>
+                </ad:LayoutRoot.BottomSide>
+
+
+                <!-- LayoutPanel is the main inner content container -->
+                <ad:LayoutPanel Orientation="Horizontal">
+                    
+                    <!-- Left anchorable pane (no pane group in this instance) / ToolBox -->
+                    <ad:LayoutAnchorablePane DockWidth="132">
+                        
+                        <!-- LayoutAnchorable is the actual content container -->
+                        <ad:LayoutAnchorable Title="ToolBox" AutoHideWidth="132" FloatingWidth="132" 
+                            CanClose="False" CanHide="False" CanFloat="False">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                
+                                <my:ToolBoxView Grid.Column="0" >
+                                    <my:ToolBoxView.ContextMenu>
+                                        <ContextMenu>
+                                            <my:ChooseMedcinTermMenuItem />
+                                        </ContextMenu>
+                                    </my:ToolBoxView.ContextMenu>
+                                </my:ToolBoxView>
+                                
+                            </ScrollViewer>
+                        </ad:LayoutAnchorable>
+                        
+                    </ad:LayoutAnchorablePane> <!-- End of ToolBox pane -->
+
+                    <!-- LayoutDocumentPaneGroup is the outer container housing the two DocumentPanes -->
+                    <ad:LayoutDocumentPaneGroup Orientation="Vertical">
+                        
+                        <!-- Upper document pane; each LayoutDocumentPane has its own DropDownButton -->
+                        <ad:LayoutDocumentPane DockHeight="2*">
+                            
+                            <!-- DESIGNER --> <!-- LayoutDocument is the actual content container -->
+                            <ad:LayoutDocument Title="Designer" CanClose="False" CanFloat="False">
+
+                                <des:DesignerView
+                                    x:Name="DesignCanvas"
+                                    DataContext="{Binding DesignerVM}"
+                                    Margin="3,1,0,0" 
+                                    PreviewKeyDown="DesignerView_PreviewKeyDown">
+                                    
+                                </des:DesignerView>
+                                
+                                <!-- When this is active, the tab shows up appropriately, but you can't see
+                                the designer canvas, can't use rubberband selection, and items that are dropped
+                                don't show up 
+                                <TabControl DataContext="{Binding DesignerVM}"
+                                            ItemsSource="{Binding Tabs}">
+
+                                    
+                                    <TabControl.ContentTemplate>
+                                        <DataTemplate>
+                                            <des:DesignerView
+                                                DataContext="{Binding}"
+                                                Margin="3,1,0,0" 
+                                                PreviewKeyDown="DesignerView_PreviewKeyDown" />
+                                        </DataTemplate>
+                                    </TabControl.ContentTemplate>
+                                </TabControl> -->
+                                
+                            </ad:LayoutDocument> <!-- End DESIGNER -->
+                        </ad:LayoutDocumentPane> <!-- End top DocumentPane (housing the designer) -->
+
+                        <!-- Lower document pane -->
+                        <ad:LayoutDocumentPane DockHeight="*">
+                            
+                            <!-- DATA GRID -->
+                            <ad:LayoutDocument Title="Data Grid" CanClose="True" CanFloat="True">
+
+                                <DataGrid x:Name="designerDataGrid"
+                                    ItemsSource="{Binding DesignerVM.ActiveTab.Items}"
+                                          
+                                    AutoGenerateColumns="False"
+                                    CanUserAddRows="False"
+                                    CanUserReorderColumns="False"
+                                    CanUserSortColumns="False"
+                                    SelectionMode="Single"
+                                    EnableRowVirtualization="False"
+                                    EnableColumnVirtualization="False"
+                                    
+                                    Loaded="designerDataGrid_Loaded"
+                                    PreviewMouseLeftButtonDown="designerDataGrid_OnMouseLeftButtonDown"
+                                    SelectionChanged="designerDataGrid_SelectionChanged"
+                                    SelectedItem="{Binding DesignerVM.ActiveTab.SelectedItem, Mode=TwoWay}" 
+          >
+                                    <DataGrid.ContextMenu>
+                                        <ContextMenu>
+                                            <MenuItem Header="Delete" Command="{Binding DeleteSelectedItemsCommand}" />
+                                        </ContextMenu>
+                                    </DataGrid.ContextMenu>
+
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Tab" Binding="{Binding Tab, Mode=OneWay}" />
+                                        <DataGridTextColumn Header="Left" Binding="{Binding Left}" />
+                                        <DataGridTextColumn Header="Top" Binding="{Binding Top}" />
+                                        <DataGridTextColumn Header="Right" Binding="{Binding Right, Mode=OneWay}" />
+                                        <DataGridTextColumn Header="Bottom" Binding="{Binding Bottom, Mode=OneWay}"/>
+                                        <DataGridTextColumn Header="Control Flag" Width="Auto" Binding="{Binding ControlFlag, Mode=OneWay}"/>
+                                        <DataGridTextColumn Header="MedcinId" Width="Auto" Binding="{Binding MedcinId}"/>
+
+                                        <DataGridTextColumn Header="Prefix" Width="*" Binding="{Binding PF_Prefix}"/>
+                                        <DataGridTextColumn Header="Modifier" Width="*" Binding="{Binding PF_Modifier}"/>
+                                        <DataGridTextColumn Header="Result" Width="*" Binding="{Binding PF_Result}"/>
+                                        <DataGridTextColumn Header="Status" Width="*" Binding="{Binding PF_Status}"/>
+                                        <DataGridTextColumn Header="Value" Width="*" Binding="{Binding PF_Value}"/>
+                                        <DataGridTextColumn Header="LinkGroup" Width="*" Binding="{Binding PF_LinkGroup}"/>
+                                        <DataGridTextColumn Header="Units" Width="*" Binding="{Binding PF_Units}"/>
+                                        <DataGridTextColumn Header="BoxOffset" Width="*" Binding="{Binding PF_BoxOffset}"/>
+                                        <DataGridTextColumn Header="InlineTextboxWidth" Width="*" Binding="{Binding PF_InlineTextboxWidth}"/>
+                                        <DataGridTextColumn Header="ComponentSequence" Width="2*" Binding="{Binding PF_ComponentSequence}"/>
+                                        <DataGridTextColumn Header="IndexToReferenceList" Width="*" Binding="{Binding PF_IndexToReferenceList}"/>
+                                        <DataGridTextColumn Header="NarrativeGroupAssignment" Width="*" Binding="{Binding PF_NarrativeGroupAssignment}"/>
+                                        <DataGridTextColumn Header="CHKYCaption" Width="*" Binding="{Binding PF_CHKYCaption}"/>
+                                        <DataGridTextColumn Header="CHKNCaption" Width="*" Binding="{Binding PF_CHKNCaption}"/>
+                                        <DataGridTextColumn Header="BitFlags" Width="*" Binding="{Binding PF_BitFlags}"/>
+                                        <DataGridTextColumn Header="LimitMax" Width="*" Binding="{Binding PF_LimitMax}"/>
+                                        <DataGridTextColumn Header="LimitMin" Width="*" Binding="{Binding PF_LimitMin}"/>
+                                        <DataGridTextColumn Header="RibbonTriggerId" Width="*" Binding="{Binding PF_RibbonTriggerId}"/>
+                                        <DataGridTextColumn Header="ClusterId" Width="*" Binding="{Binding PF_ClusterId}"/>
+                                        <DataGridTextColumn Header="ParentRibbonId" Width="*" Binding="{Binding PF_ParentRibbonId}"/>
+                                        <DataGridTextColumn Header="RadioButtonGroup" Width="*" Binding="{Binding PF_RadioButtonGroup}"/>
+                                        <DataGridTextColumn Header="ImageId" Width="*" Binding="{Binding PF_ImageId}"/>
+                                        <DataGridTextColumn Header="HotSpotSetId" Width="*" Binding="{Binding PF_HotSpotSetId}"/>
+                                        <DataGridTextColumn Header="ParentFrame" Width="*" Binding="{Binding PF_ParentFrame}"/>
+                                        <DataGridTextColumn Header="CodeMapping" Width="*" Binding="{Binding PF_CodeMapping}"/>
+                                        <DataGridTextColumn Header="UserAssignedSubgroup" Width="*" Binding="{Binding PF_UserAssignedSubgroup}"/>
+
+                                        <DataGridTextColumn Header="ItemData" Width="Auto" IsReadOnly="True" Binding="{Binding ItemData}"/>
+
+                                        <DataGridTextColumn Header="Caption" Width="Auto" Binding="{Binding D_Caption}"/>
+                                        <DataGridTextColumn Header="Content" Width="Auto" Binding="{Binding D_Content}"/>
+                                    </DataGrid.Columns>
+
+                                    <!-- Use this to display a details row beneath the selected item
+                                    <DataGrid.RowDetailsTemplate>
+                                        <DataTemplate>
+                                            <Border Margin="2" Padding="2" BorderBrush="SteelBlue" BorderThickness="3" CornerRadius="5">
+                                                <TextBlock Text="{Binding Path=ControlType}"/>
+                                            </Border>
+                                        </DataTemplate>
+                                    </DataGrid.RowDetailsTemplate> -->
+                                </DataGrid>
+
+                            </ad:LayoutDocument> <!-- End DATA GRID -->
+                        </ad:LayoutDocumentPane> <!-- End bottom DocumentPane (housing the data grid) -->
+                    </ad:LayoutDocumentPaneGroup> <!-- End document section -->
+
+                    <!-- Right anchorable group / properties -->
+                    <ad:LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="300" FloatingWidth="300">
+                        <ad:LayoutAnchorablePane>
+                            <ad:LayoutAnchorable Title="Properties" AutoHideWidth="300"
+                                CanClose="False" CanHide="False" CanFloat="False">
+                                
+                                <!-- RIGHT PANEL PROPERTYGRID -->
+                                <ScrollViewer>
+                                    <StackPanel>
+                                    
+                                        <Expander Header="Template Properties" IsExpanded="True">
+                                            
+                                            <Grid DataContext="{Binding DesignerVM}"
+                                                Margin="0 5 5 0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <!-- utility:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" -->
+                                                <!--
+                                                <TextBlock Text="Designer Version"
+                                                           Grid.Row="0" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding Path=Version, Mode=OneWay}"
+                                                         Grid.Row="0" Grid.Column="1" Margin="5 0 0 5"/> -->
+                                                
+                                                <TextBlock Text="Template Name"
+                                                    Grid.Row="1" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding TemplateName, Mode=TwoWay}"  
+                                                    Grid.Row="1" Grid.Column="1" 
+                                                    Margin="5 0 0 5" />
+
+                                                <TextBlock Text="Author"
+                                                    Grid.Row="2" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding Owner, Mode=TwoWay}" 
+                                                    Grid.Row="2" Grid.Column="1" 
+                                                    Margin="5 0 0 5" />
+
+                                                <!--
+                                                <TextBlock Text="Owner Type"
+                                                           Grid.Row="3" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding Path=OwnerType, Mode=TwoWay}" h:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" 
+                                                         Grid.Row="3" Grid.Column="1" 
+                                                         Margin="5 0 0 5" /> -->
+
+                                                <TextBlock Text="Width"
+                                                    Grid.Row="4" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding Width, Mode=TwoWay}" 
+                                                    Grid.Row="4" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                <TextBlock Text="Height"
+                                                    Grid.Row="5" Margin="5 0 5 0"/>
+                                                <TextBox Text="{Binding Height, Mode=TwoWay}" 
+                                                    Grid.Row="5" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                <TextBlock Text="ActiveTab"
+                                                    Grid.Row="6" Margin="5 0 5 0"/>
+                                                <TextBlock Text="{Binding ActiveTab.Index, Mode=OneWay}" 
+                                                    Grid.Row="6" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                <Button Content="Add Tab" Command="{Binding AddTabCommand}"
+                                                    Grid.Row="7" Grid.Column="0" Margin="5 0 0 5" 
+                                                    IsEnabled="False" ToolTip="Add another tab."/>
+
+                                                <Button Content="Export Template" Command="{Binding ExportTemplateCommand}"
+                                                    Grid.Row="7" Grid.Column="1" Margin="5 0 0 5" 
+                                                    ToolTip="Export the template to use in AHLTA"/>
+
+
+
+                                            </Grid>
+                                        </Expander>
+
+                                        <Expander Header="Tab Properties" IsExpanded="True">
+                                            <DockPanel >
+                                                <my:TabPropertiesView DataContext="{Binding DesignerVM}"/>
+                                            </DockPanel>
+                                            <!--
+                                            <Grid DataContext="{Binding Path=DesignerVM}" 
+                                                  Margin="0 5 5 0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                
+                                                
+
+                                                
+                                                <TextBlock Text="Tab Name" Grid.Row="0" Margin="5 0 5 0" />
+                                                <TextBox Text="{Binding Path=ActiveTab.Name, Mode=TwoWay}" h:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" 
+                                                         Grid.Row="0" Grid.Column="1" Margin="5 0 0 5" />
+                                                
+                                                <TextBlock Text="Tab Index" Grid.Row="1" Margin="5 0 5 0" />
+                                                <TextBlock Text="{Binding Path=ActiveTab.Index, Mode=OneWay}" Grid.Row="1" Grid.Column="1" Margin="5 0 5 0" />
+
+                                                <Button Content="Remove Tab" Command="{Binding RemoveTabCommand}"
+                                                        Grid.Row="2" Grid.Column="0" Margin="5 0 0 5" 
+                                                        IsEnabled="False" ToolTip="Remove the current tab with all its contents."/>
+
+                                                <Button Content="Validate Tab" Command="{Binding ValidateTabCommand}"
+                                                        Grid.Row="2" Grid.Column="1" Margin="5 0 0 5" 
+                                                        IsEnabled="False" ToolTip="Remove the current tab with all its contents."/>
+                                                
+                                            </Grid>
+                                            -->
+                                        </Expander>
+
+                                        <Expander Header="Control Properties" IsExpanded="True"
+                                            DataContext="{Binding DesignerVM.ActiveTab.SelectedItem}">
+                                            <StackPanel>
+                                                <Grid  Margin="0 5 5 0">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+
+                                                    <TextBlock Text="Type"
+                                                        Grid.Row="0" Margin="5 0 5 0"/>
+                                                    <TextBox x:Name="Ctrl_Type" 
+                                                        Text="{Binding ControlType2, Mode=OneWay}"
+                                                        Grid.Row="0" Grid.Column="1" 
+                                                        Margin="5 0 0 5" 
+                                                        IsReadOnly="True"/>
+
+                                                    <!--
+                                                    <TextBlock Text="Medcin Term" Grid.Row="1" Grid.Column="0" 
+                                                               Margin="5 0 0 5"/>
+                                                <ComboBox Grid.Row="1" Grid.Column="1"
+                                                          DisplayMemberPath="Value"
+                                                          SelectedValuePath="Key"
+                                                          SelectedValue="{Binding Path=MySelectionViewModel.SelectedKey, Mode=TwoWay}"
+                                                          ItemsSource="..."/> -->
+
+                                                    <!--
+                                                <TextBlock Text="Left" Grid.Row="1" Margin="5 0 5 0"/>
+                                                <TextBox Name="Ctrl_Left"
+                                                         Text="{Binding Path=Left, Mode=TwoWay}" h:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" 
+                                                         Grid.Row="1" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                <TextBlock Text="Top" Grid.Row="2" Margin="5 0 5 0"/>
+                                                <TextBox Name="Ctrl_Top"
+                                                         Text="{Binding Path=Top, Mode=TwoWay}" h:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" 
+                                                         Grid.Row="2" Grid.Column="1" Margin="5 0 0 5"/> -->
+                                                    <!--
+                                                    <TextBlock Text="Font" Grid.Row="1" Margin="5 0 5 0"/>
+                                                    <ComboBox x:Name="FontFamilySelector"
+                                                              Grid.Row="1" Grid.Column="2"
+                                                              ItemsSource="{Binding SystemFonts}"
+                                                              HorizontalAlignment="Stretch"
+                                                              Padding="-1"
+                                                              Margin="5 0 0 5"
+                                                              VerticalAlignment="Top">                                                          >
+                                                        <ComboBox.ItemsPanel>
+                                                            <ItemsPanelTemplate>
+                                                                <VirtualizingStackPanel Width="300" />
+                                                            </ItemsPanelTemplate>
+                                                        </ComboBox.ItemsPanel>
+                                                        <ComboBox.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <Grid Height="24">
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition Width="160" />
+                                                                        <ColumnDefinition Width="*" />
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <TextBlock Grid.Column="0"
+                                                                               HorizontalAlignment="Left"
+                                                                               VerticalAlignment="Center"
+                                                                               Margin="3"
+                                                                               Text="{Binding}" />
+                                                                    <TextBlock Grid.Column="1"
+                                                                               HorizontalAlignment="Right"
+                                                                               VerticalAlignment="Center"
+                                                                               Margin="3"
+                                                                               Text="ABCabc123!@#$"
+                                                                               FontFamily="{Binding}" />
+
+                                                                </Grid>
+                                                            </DataTemplate>
+                                                        </ComboBox.ItemTemplate>
+                                                    </ComboBox -->
+                                                    <!--
+                                                    <TextBox Name="Ctrl_Font"
+                                                         Text="{Binding Path=Font, Mode=TwoWay}" h:InputBindingsManager.UpdatePropertySourceWhenEnterPressedProperty="TextBox.Text" 
+                                                         Grid.Row="1" Grid.Column="1" Margin="5 0 0 5"/> -->
+
+                                                    <TextBlock Text="Font Style" Grid.Row="2" Margin="5 0 5 0"/>
+                                                    <TextBox x:Name="Ctrl_Height"
+                                                        Text=""
+                                                        Grid.Row="2" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                    <TextBlock Text="Caption" Grid.Row="3" Margin="5 0 5 0"/>
+                                                    <TextBox x:Name="Ctrl_Caption"
+                                                        Text="{Binding D_Caption, Mode=TwoWay}" 
+                                                        Grid.Row="3" Grid.Column="1" Margin="5 0 0 5"/>
+
+                                                    <TextBlock Text="Content" Grid.Row="4" Margin="5 0 5 5"/>
+                                                    <TextBox x:Name="Ctrl_Content"
+                                                        Text="{Binding D_Content, Mode=TwoWay}" 
+                                                        TextWrapping="Wrap" AcceptsReturn="True"
+                                                        Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
+                                                        Height="80" Margin="5 0 0 5"/>
+
+                                                </Grid>
+
+                                            </StackPanel>
+                                        </Expander>
+                               
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </ad:LayoutAnchorable>
+                            
+                            <ad:LayoutAnchorable Title="Tool 2"
+                                CanClose="False" CanHide="False" CanFloat="False">
+                                <TextBox/>
+                            </ad:LayoutAnchorable>
+                            
+                        </ad:LayoutAnchorablePane>
+
+                    </ad:LayoutAnchorablePaneGroup>
+                </ad:LayoutPanel>
+
+
+            </ad:LayoutRoot>
+        </ad:DockingManager>
+
+        
+        <!-- STATUS BAR -->
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="4" DataContext="{Binding DesignerVM}">
+            <StackPanel Orientation="Horizontal">
+                
+                <TextBlock Text="TabCount: " />
+                <TextBlock Text="{Binding TabCount, Mode=OneWay}" Margin="0 0 10 0"/>
+                
+                <TextBlock Text="ActiveTab: " />
+                <TextBlock Text="{Binding ActiveTab.Name, Mode=TwoWay}" Margin="0 0 10 0"/>
+               
+                <TextBlock Text="ActiveTab.SelectedItem: " />
+                <TextBlock Text="{Binding ActiveTab.SelectedItem, Mode=OneWay}" Margin="0 0 10 0"/>
+
+            </StackPanel>
+        </StatusBar>
+
+        <!-- the popup that is displayed if user moves rows -->
+        <Popup x:Name="DragDropPopup"
+            IsHitTestVisible="False"
+            Placement="RelativePoint"
+            PlacementTarget="{Binding ElementName=me}"
+            AllowsTransparency="True">
+            <Border BorderBrush="LightSteelBlue"
+                BorderThickness="2"
+                Background="White"
+                Opacity="0.75">
+                <StackPanel Orientation="Horizontal" Margin="4,3,8,3">
+                    <Rectangle Fill="Yellow" Width="16" Height="16" />
+                    <TextBlock FontSize="14" FontWeight="Bold" VerticalAlignment="Center"
+                        Text="{Binding DraggedItem, ElementName=me}"
+                        Margin="8,0,0,0" />
+                </StackPanel>
+            </Border>
+        </Popup>
+
+    </Grid>
+
+
+</Window>

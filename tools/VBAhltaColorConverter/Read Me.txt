@@ -1,0 +1,1 @@
+Unzip the file and add an .exe extension. Gmail fusses otherwise. It's a tiny Visual Basic application.

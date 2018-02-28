@@ -1,0 +1,183 @@
+
+
+= 2 week = 5
+2,25,115,370,135,297272,8961," ||||||days|19|80|YCN|0|0|Y|N|0|||0|0|2|0|0|0|||","F=Arial|T=T","Feeding well"
+2,25,135,370,155,297275,8961," ||||||days|19|80|YCN|0|0|Y|N|0|||0|0|2|0|0|0|||","F=Arial|T=T","Calms to voice"
+2,25,155,370,175,297273,8961," ||||||days|19|80|YCN|0|0|Y|N|0|||0|0|2|0|0|0|||","F=Arial|T=T","Follows faces"
+2,25,175,370,195,297276,8961," ||||||days|19|80|YCN|0|0|Y|N|0|||0|0|2|0|0|0|||","F=Arial|T=T","Sucks, swallows and breathes without difficulty"
+2,25,195,370,215,297274,8961," ||||||days|19|80|YCN|0|0|Y|N|0|||0|0|2|0|0|0|||","F=Arial|T=T","Turns to voice"
+
+= 1 month = 4
+2,25,289,370,309,9874,8961," | || |||weeks|19|80|YCN|0|0|Y|N|0|||0|0|3|0|0|0|||","F=Arial|T=T","Fixes on faces"
+2,25,309,370,329,297277,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|3|0|0|0|||","F=Arial|T=T","Can be calmed"
+2,25,329,370,349,9876,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|3|0|0|0|||","F=Arial|T=T","Lifts chin off surface"
+2,25,349,370,369,297278,8961," | || ||1|weeks|19|80|YCN|0|0|Y|N|0|||0|2|3|0|0|0|||","O=25|F=Arial|T=T","Starting to smile"
+
+= 2 month = 10
+2,25,439,370,459,297278,8961," | || ||Z|weeks|19|80|YCN|0|0|Y|N|0|||0|2|4|0|0|0|||","O=25|F=Arial|T=T","Starting to smile"
+2,25,459,370,479,9880,8961," | || ||1|weeks|19|80|YCN|0|0|Y|N|0|||0|3|4|0|0|0|||","O=25|F=Arial|T=T","Head steady in upright position"
+2,25,479,370,499,297282,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Coos"
+2,25,499,370,519,297279,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Diminished newborn reflexes"
+2,25,519,370,539,297283,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Different cry for different needs"
+2,25,539,370,559,297280,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Symmetric movement"
+2,25,559,370,579,297284,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Looks at parents"
+2,25,579,370,599,297281,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Can indicate boredom"
+2,25,599,370,619,9879,8961," ||||||weeks|19|80|YCN|0|0|Y|N|0|||0|0|4|0|0|0|||","F=Arial|T=T","Lifts head and chest off surface"
+2,25,619,370,639,297288,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|4|4|0|0|0|||","F=Arial|O=25|T=T","Calms self"
+
+= 4 month = 10
+2,25,711,370,731,9877,8961," | || |||weeks|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|-1|||","F=Arial|T=T","Has a social smile"
+2,25,731,370,751,9888,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","Reaches for objects"
+2,25,751,370,771,9880,8961," | || ||Z|weeks|19|80|YCN|0|0|Y|N|0|||0|3|5|0|0|0|||","F=Arial|O=25|T=T","Head steady in upright position"
+2,25,771,370,791,297288,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|4|5|0|0|0|||","F=Arial|O=25|T=T","Calms self"
+2,25,791,370,811,297285,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","Responds to affection"
+2,25,811,370,831,9885,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|5|5|0|0|0|||","F=Arial|O=25|T=T","Rolls from front onto back"
+2,25,831,370,851,297286,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","Elicits attention"
+2,25,851,370,871,9886,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","No head lag when pulled to sit position"
+2,25,871,370,891,297287,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","Indicates pleasure and displeasure"
+2,25,891,370,911,9884,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|5|0|0|0|||","F=Arial|T=T","Uses arms to push chest off surface"
+
+= 6 month = 8
+2,25,983,370,1003,9885,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|5|6|0|0|0|||","F=Arial|O=25|T=T","Rolls from front onto back"
+2,25,1003,370,1023,9890,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Rolls over from back to front"
+2,25,1023,370,1043,297292,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Makes vowel sounds"
+2,25,1043,370,1063,297289,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Sits briefly leaning forward"
+2,25,1063,370,1083,297293,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Enjoys vocal turn-taking"
+2,25,1083,370,1103,297290,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Visually explores surroundings"
+2,25,1103,370,1123,297294,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Enjoys personal interactions"
+2,25,1123,370,1143,261589,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|6|0|0|0|||","F=Arial|T=T","Responds to own name"
+
+
+= 9 month = 8
+2,25,1215,370,1235,9891,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Sits independently"
+2,25,1235,370,1255,297295,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Looks at books"
+2,25,1255,370,1275,261591,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Crawls / creeps"
+2,25,1275,370,1295,297297,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Points: out objects"
+2,25,1295,370,1315,9893,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Shy with strangers"
+2,25,1315,370,1335,282600,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Object permanence"
+2,25,1335,370,1355,297298,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|7|0|0|0|||","F=Arial|T=T","Seeks parents for comfort"
+2,25,1355,370,1375,297299,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|6|7|0|0|0|||","F=Arial|O=25|T=T","Imitates sounds"
+
+
+= 12 month = 13
+2,25,1447,370,1467,9889,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Babbles"
+2,25,1467,370,1487,297299,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|6|8|0|0|0|||","F=Arial|O=25|T=T","Imitates sounds"
+2,25,1487,370,1507,261625,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Plays peek-a-boo"
+2,25,1507,370,1527,297300,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Follows gaze"
+2,25,1527,370,1547,9904,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Pulls self to a standing position"
+2,25,1547,370,1567,297301,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Cries when you leave"
+2,25,1567,370,1587,9895,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Waves bye-bye"
+2,25,1587,370,1607,9906,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Stands well alone"
+2,25,1607,370,1627,9896,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Imitates simple daily tasks"
+2,25,1627,370,1647,9898,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Bangs objects together"
+2,25,1647,370,1667,297302,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Offers a book to read"
+2,25,1667,370,1687,9901,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Says Mama or Dada specifically"
+2,25,1687,370,1707,9903,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|8|0|0|0|||","F=Arial|T=T","Drinks from a cup"
+
+
+
+
+= 15 month = 9
+2,407,115,752,135,9907,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Walks unassisted"
+2,407,135,752,155,261598,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Listens to a story"
+2,407,155,752,175,297303,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|7|9|0|0|0|||","F=Arial|O=25|T=T","Tries to do what parents do"
+2,407,175,752,195,297304,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Brings and shows toys"
+2,407,195,752,215,261596,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Understands and follows simple commands"
+2,407,215,752,235,297305,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Scribbles"
+2,407,235,752,255,261595,8961," | || ||||19|80|YCN|0|0|Y|N|0|||0|0|9|0|0|0|||","F=Arial|T=T","Vocabulary of 3-6 words"
+2,407,255,752,275,297306,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|8|9|0|0|0|||","F=Arial|O=25|T=T","Drinks with minimal spilling"
+2,407,275,752,295,9909,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|9|9|0|0|0|||","F=Arial|O=25|T=T","Helps with simple tasks"
+
+
+= 18 month = 10
+2,407,367,752,387,9915,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Points to body part on request"
+2,407,387,752,407,297307,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Names favorite book"
+2,407,407,752,427,297306,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|8|10|0|0|0|||","F=Arial|O=25|T=T","Drinks with minimal spilling"
+2,407,427,752,447,297308,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Laughs in response to others"
+2,407,447,752,467,261599,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Stacks two blocks"
+2,407,467,752,487,9917,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Vocabulary of 7-20 words"
+2,407,487,752,507,9909,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|9|10|0|0|0|||","F=Arial|O=25|T=T","Helps with simple tasks"
+2,407,507,752,527,9920,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Walks up steps"
+2,407,527,752,547,297310,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Uses spoon with minimal spilling"
+2,407,547,752,567,297311,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|10|0|0|0|||","F=Arial|T=T","Runs"
+
+
+= 24 month = 13
+2,407,639,752,659,297303,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|7|11|0|0|0|||","F=Arial|O=25|T=T","Tries to do what parents do"
+2,407,659,752,679,297315,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Follows 2-step commands"
+2,407,679,752,699,9914,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Combines two different words"
+2,407,699,752,719,9926,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Turns single pages"
+2,407,719,752,739,9916,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Names an animal in a picture"
+2,407,739,752,759,9933,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Jumps in place"
+2,407,759,752,779,9918,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Kicks ball forward"
+2,407,779,752,799,9936,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Walks up and down stairs"
+2,407,799,752,819,297313,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Plays pretend"
+2,407,819,752,839,9919,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Throws ball overhand"
+2,407,839,752,859,297314,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Parallel play (alongside children)"
+2,407,859,752,879,9924,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Plays interactively with other children"
+2,407,879,752,899,9925,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|11|0|0|0|||","F=Arial|T=T","Stacks 5 or more blocks"
+
+
+= 30 month = 10
+2,407,971,752,991,297313,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|12|12|0|0|0|||","F=Arial|O=25|T=T","Plays pretend"
+2,407,991,752,1011,9938,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Dresses with supervision"
+2,407,1011,752,1031,9933,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|10|12|0|0|0|||","F=Arial|O=25|T=T","Jumps in place"
+2,407,1031,752,1051,9929,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Uses 2-3 word sentences"
+2,407,1051,752,1071,297317,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Points to 6 body parts"
+2,407,1071,752,1091,297318,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Knows animal sounds"
+2,407,1091,752,1111,297270,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Brushes teeth with help"
+2,407,1111,752,1131,9924,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|11|12|0|0|0|||","F=Arial|O=25|T=T","Plays interactively with other children"
+2,407,1131,752,1151,9922,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Washes and dries hands"
+2,407,1151,752,1171,297316,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|12|0|0|0|||","F=Arial|T=T","Speech 50% intelligible"
+
+
+= 3 yr = 11
+2,407,1243,752,1263,261613,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|12|13|0|0|0|||","F=Arial|O=25|T=T","Plays make-believe"
+2,407,1263,752,1283,9942,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Draws a person (2 parts)~(2 body parts)"
+2,407,1283,752,1303,9932,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Balances on one foot for 1 second"
+2,407,1303,752,1323,297319,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Can speak multiple sentences"
+2,407,1323,752,1343,9919,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|13|13|0|0|0|||","F=Arial|O=25|T=T","Throws a ball overhand"
+2,407,1343,752,1363,297320,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Speech 75% intelligible"
+2,407,1363,752,1383,297322,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|14|13|0|0|0|||","F=Arial|O=25|T=T","Can stack 6-8 blocks"
+2,407,1383,752,1403,297321,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Can name a friend"
+2,407,1403,752,1423,297323,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Toilet-trained during day"
+2,407,1423,752,1443,9950,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Alternates feet walking up stairs"
+2,407,1443,752,1463,9941,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|13|0|0|0|||","F=Arial|T=T","Can copy a circle"
+
+
+= 4 yr = 12
+2,407,1535,752,1555,261608,8961," | || |||years|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Dresses without help"
+2,407,1555,752,1575,9949,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Jumps on one foot"
+2,407,1575,752,1595,261613,8961," | || ||Z|years|19|80|YCN|0|0|Y|N|0|||0|12|14|0|0|0|||","F=Arial|O=25|T=T","Plays make-believe"
+2,407,1595,752,1615,297327,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Brushes teeth independently"
+2,407,1615,752,1635,261615,8961," ||||||years|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Plays interactive games with peers"
+2,407,1635,752,1655,9931,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Knows name, age, and sex"
+2,407,1655,752,1675,261605,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Draws a person (3 parts)~(3 body parts)"
+2,407,1675,752,1695,297322,8961," | || ||Z|months|19|80|YCN|0|0|Y|N|0|||0|14|14|0|0|0|||","F=Arial|O=25|T=T","Can stack 6-8 blocks"
+2,407,1695,752,1715,297325,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|15|14|0|0|0|||","F=Arial|O=25|T=T","Names four colors"
+2,407,1715,752,1735,261601,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Can copy a cross"
+2,407,1735,752,1755,297324,8961," | || |||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Interacts with peers"
+2,407,1755,752,1775,9947,8961," ||||||months|19|80|YCN|0|0|Y|N|0|||0|0|14|0|0|0|||","F=Arial|T=T","Balances on one foot for 5 seconds"
+
+
+= 5-6 yr = 10
+2,407,1847,752,1867,261612,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Skips"
+2,407,1867,752,1887,261611,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Prints letters of the alphabet"
+2,407,1887,752,1907,297330,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Articulates clearly"
+2,407,1907,752,1927,297328,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Able to tie a knot"
+2,407,1927,752,1947,297331,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Counts to 10"
+2,407,1947,752,1967,297329,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Copies squares and triangles"
+2,407,1967,752,1987,297332,8961," | || ||1|years|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Is attentive"
+2,407,1987,752,2007,261596,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|0|15|0|0|-1|||","F=Arial|T=T","Understands and follows simple commands"
+2,407,2007,752,2027,297325,8961," | || ||A|months|19|80|YCN|0|0|Y|N|0|||0|15|15|0|0|-1|||","F=Arial|O=25|T=T","Names four colors"
+2,407,2027,752,2047,9948,8961," | || ||1|months|19|80|YCN|0|0|Y|N|0|||0|0|0|0|0|-1|||","F=Arial|T=T","Balances on one foot for 10 seconds"
+
+
+= 7-10 yr = 6
+2,407,2119,752,2139,297338,8961," | || ||Z|years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Does chores at home when asked"
+2,407,2139,752,2159,297339,8961," | || ||Z|years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Gets along well with family and friends"
+2,407,2159,752,2179,297343,8961," | || ||Z|years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Engages in after-school activities"
+2,407,2179,752,2199,261621,8961," | || ||Z|years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Reading and doing math at grade Level"
+2,407,2199,752,2219,297333,8961," | || ||Z|years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Eats healthy food and snacks"
+2,407,2219,752,2239,297340,8961," ||||||years|19|80|YCN|0|0|||0|||0|0|16|0|0|0|||","F=Arial|T=T","Has a positive self-image"
+

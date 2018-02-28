@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:di="clr-namespace:ITG.Desktop.DesignerItems">
+
+    <DataTemplate DataType="{x:Type di:LabelVM}">
+
+        <Grid ShowGridLines="False"
+              Height="19" 
+              Width="{Binding Width}">
+
+            <Rectangle IsHitTestVisible="False"
+                       Width="{Binding Width}" 
+                       Height="{Binding Height}"
+                       Fill="{Binding ID_BackColor, Converter={StaticResource BGRIntToSolidColorBrushConverter}}"/>
+
+            <TextBlock Margin="0 1 0 0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       IsHitTestVisible="False"
+                       FontFamily="{Binding Font}"
+                       FontSize="{Binding FontSize}"
+                       FontStyle="{Binding FontStyle}" 
+                       Text="{Binding D_Caption}" />
+        </Grid>
+
+    </DataTemplate>
+
+</ResourceDictionary>

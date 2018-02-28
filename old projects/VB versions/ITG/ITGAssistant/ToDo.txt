@@ -1,0 +1,11 @@
+﻿Features:
+1) The Color Chooser button lets you choose a color from a standard Color dialog and gives you the corresponding number used in AHLTA's template files.  See the documentation I emailed earlier for where/how to use it.  It will also let you put in one of AHLTA's color codes and show you the corresponding color.
+
+2) The Default Text Formatter button lets you type the default text for any field as you'd like to see it, and converts it to the form AHLTA needs in its template files.  
+
+3) The Control Decoder button lets you put in the integer from the template files that represents the on-screen user control and shows you which component flags are used in that control.  It has no end-user applications, so you can ignore it.
+
+Planned additions for the near future: 
+* Load an existing template, sort the items by the tab they're on, and spit out a new template file.  Purpose: A) Test whether item order matters, and if not, to make it easier to find/change existing templates
+
+** Load an existing template and display the items in a data grid (allowing individual settings to be edited) and export the template.  Purpose: A) test the ITGFormItem class structure and property access; B) explore the use of DataGrids; C) explore databinding

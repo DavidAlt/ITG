@@ -1,0 +1,5 @@
+
+1) Create the View
+2) Create the ViewModel
+3) Add the ViewModel to the startup list in ApplicationViewModel.cs
+4) Add the DataTemplate to the ApplicationView.xaml resources list

@@ -1,0 +1,4 @@
+V3^Depo Injection --PRM^1^False^^^1099041^2017177^||||||L\\^V3,Depo Injection ccj,1,True,,\|112176,,0,Depo-Provera #  1
+   injection.,,\|167702,H,0,on 21 Mar 07
+.,,\|17263,H,0,2 negative HCG's.,,\|41015,H,0,on 21 Mar 07 next due date 6 June 07 This 
+is not within 13 week window.,,\|4415,,1,the patient voiced no questions/concerns.,,\|391,,1,or questions about weight gain.,,\|110774,,1,,,\|1204,,1,,,\|11454,,4,PT GIVEN INJECTION .  Depo Provera 150mg IM to  LD. Lot # 32mdj/ 01/2009.  Comments. RTC  Date: 27 Sep 07-11Oct 07. The patient understands Depo Provera education information.  Pt instructed to wait in clinic for 15 minutes to ensure no adverse reactions occur.,,\|^||||||

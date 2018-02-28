@@ -1,0 +1,328 @@
+Category        Prefix Code List (see code field in qualifier table in
+chart.mdb for codename=PREFIX)
+Allergy "AL", "IN", "HY"
+Family History  "F", "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8",
+"F9", "FB", "FC", "FJ", "FK", "FL", "FM"
+History "H", "HR", "HU", "UN", "PH", "RV"
+Order   "O", "CO", "CT", "DC", "MD", "OC", "OP", "OX", "RX"
+Blank   None of the above
+
+
+Global constants for chart.prefix
+Global Const PREFIX_ADMITDX = "A "      ' admission diagnosis of
+Global Const PREFIX_ALERGY = "AL"       ' allergy to
+Global Const PREFIX_BLANK = "  "
+Global Const PREFIX_DEATH = "D "        ' cause of death was
+Global Const PREFIX_DISCHDX = "DS"      ' discharge diagnosis of
+Global Const PREFIX_DISCUS = "DI"       ' discussion of
+Global Const PREFIX_DISCUSRISK = "DR"   ' discussion of risk of
+Global Const PREFIX_EVALUATE = "E "     ' evaluate preoperatively for
+Global Const PREFIX_FAMILY = "F "       ' family history of
+Global Const PREFIX_FOLLOWUP = "FU"     ' follow-up for
+Global Const PREFIX_HIST = "H " ' history of
+Global Const PREFIX_HISTREC = "HR"      ' recurrent history of
+Global Const PREFIX_HISTUNC = "HU"      ' uncorroborated history of
+Global Const PREFIX_INTEROP = "IO"      ' intra-operative
+Global Const PREFIX_INTOLERANT = "IN"   ' intolerant to
+Global Const PREFIX_INTRAPROC = "IP"    ' intraprocedural
+Global Const PREFIX_NORESPRX = "UN"     ' unresponsive to
+Global Const PREFIX_ORDER = "O "        ' ordered
+Global Const PREFIX_ORDERO = "o "       ' to change "ordered" to "order" in
+entry mode
+Global Const PREFIX_PERIOP = "PE"       ' perioperative
+Global Const PREFIX_POSSIBLE = "? "     ' possible
+Global Const PREFIX_POST = "PS" ' post
+Global Const PREFIX_POSTOP = "PO"       ' post-operative
+Global Const PREFIX_POSTPROC = "PP"     ' postprocedural
+Global Const PREFIX_PRIMARY = "P "      ' primary diagnosos of
+Global Const PREFIX_PROBABLE = "?+"     ' probable
+Global Const PREFIX_REFERDX = "RD"      ' referral diagnosis of
+Global Const PREFIX_REFERELS = "RF"     ' referred elsewhere for
+Global Const PREFIX_RISKOF = "RI"       ' risk of
+Global Const PREFIX_RULEOUT = "RO"      ' rule out
+Global Const PREFIX_SCHEDULE = "SC"     ' scheduled for
+Global Const PREFIX_SECOND = "S "       ' secondary diagnosos of
+Global Const PREFIX_WORK = "W " ' working diagnosis of
+
+
+Medcinids used for not-found user findings
+Global Const UF_DIS = 38395     ' type diagnosis
+Global Const UF_HIS = 4900      ' type history
+Global Const UF_PHY = 62548     ' type physical
+Global Const UF_RX = 70583      ' type therapy
+Global Const UF_SYM = 2508      ' type symptom
+Global Const UF_TST = 29331     ' type test
+
+
+Global constants for selected medcinids
+Global Const F_ASSESS = 35832   ' assessment free text
+Global Const F_CARE = 80566     ' plan
+Global Const F_CORRFIND = 49941 ' correspondance sent
+Global Const F_EVAL = 44693     ' evaluation & management free text
+Global Const F_HIST = 4415      ' subjective free text
+Global Const F_NOTE = 44460     ' therapy free text
+Global Const F_OBSERV = 11454   ' objective free text
+Global Const F_PATCARE = 49942  ' patient care reviewed
+Global Const F_PHONE = 2125     ' phone call chief concern
+Global Const F_PISFIND = 46015  ' patient information sheets
+Global Const F_PLAN = 19467     ' plan free text
+Global Const F_REASON = 1718    ' chief complaint
+Global Const F_SIGFIND = 49942  ' signature record
+
+
+Global constants for major groups
+Global Const G_REASON = 1       ' Chief complaint
+Global Const G_HPI = 2          ' History of present illness
+Global Const G_CURMED = 3       ' Current medication
+Global Const G_PAST_MED_HIST = 4        ' Past medical history
+Global Const G_PER_HIST = 5     ' Personal history
+Global Const G_HIST = 6 ' History
+Global Const G_FAM_HIST = 7     ' Family history
+Global Const G_PHYSICAL = 8     ' Physical findings
+Global Const G_OBSERV = 9       ' Objective
+Global Const G_TESTS = 10       ' Tests
+Global Const G_ASSESS = 11      ' Assessment
+Global Const G_THERAPY = 12     ' Therapy
+Global Const G_PLAN = 13        ' Plan
+Global Const G_NOTE = 14        ' Notes
+Global Const G_OTHER = 15       ' Other
+Global Const G_ROS = 16 ' Review of systems
+Global Const G_EVAL = 17        ' Practice management
+Global Const G_PAST_TESTS = 18  ' Previous tests
+Global Const G_PAST_THERAPY = 19        ' Previous therapy
+Global Const G_REFERDX = 20     ' Referred here
+Global Const G_TESTCON = 21     ' Test conclusions
+Global Const G_EDUCATION = 22   ' Counseling/Education
+Global Const G_VACCINES = 23    ' Vaccinations
+Global Const G_ALLERGYS = 24    ' Allergies
+Global Const G_DISCUSS = 25     ' Discussed
+Global Const G_CAREPLAN = 99    ' Care Plan
+
+
+Step 2: Determination of Group
+The medcinid set needs to be divided into groups before presentation. In
+this document, global constants for these groups begin with "G_" and are
+defined in "MEDCIN Global Constants". The sequence of these groups for
+presentation should be definable by the end user. An initial default for
+this sequence is as follows:
+1.      G_REASON (Chief complaint)
+2.      G_REFERDX (Referred here)
+3.      G_HPI (History of present illness)
+4.      G_CURMED (Current medication)
+5.      G_PAST_MED_HIST (Past medical history)
+6.      G_PAST_THERAPY (Previous therapy)
+7.      G_PER_HIST (Personal history)
+8.      G_HIST (History)
+9.      G_FAM_HIST (Family history)
+10.     G_ROS (Review of systems)
+11.     G_PHYSICAL (Physical findings)
+12.     G_OBSERV (Objective)
+13.     G_TESTS (Tests)
+14.     G_PAST_TESTS (Previous tests)
+15.     G_ASSESS (Assessment)
+16.     G_TESTCON (Test conclusions)
+17.     G_THERAPY (Therapy)
+18.     G_ALLERGYS (Allergies)
+19.     G_VACCINES (Vaccinations)
+20.     G_EDUCATION (Counseling/Education)
+21.     G_DISCUSS (Discussed)
+22.     G_PLAN (Plan)
+23.     G_NOTE (Notes)
+24.     G_OTHER (Other)
+25.     G_EVAL (Practice management)
+
+The report.gpseq field is used to store the sequence number and should be
+initialized with either the default sequence or user's preferred sequence,
+if available. The field will be subsequently referenced in "Sequence Reports
+for Presentation". The following alphabetically-sequenced bulleted items
+explain the group determination rules.
+
+.       Allergies (G_ALLERGYS): This group includes all findings with a
+chart.prefix of PREFIX_ALERGY (allergy to) or PREFIX_ INTOLERANT (intolerant
+to). In addition, some findings embody the concept of "allergy" in their
+context. Obtain a search list for these findings using the search word
+string, "ALLERGY" " (see "Searching for MEDCIN Terms: Word Search"); if the
+Medcinid in question is in the resulting list, the finding should be placed
+in this group.
+
+.       Assessment (G_ASSESS): This group includes medcinid 35832
+(assessment free text). Also included are findings which have a termtype of
+TYPE_DX (diagnosis) but do not have a chart.prefix of PREFIX_HISTORY
+(history of). Also included are all findings which have a chart.prefix of
+PREFIX_PRIMARY (primary diagnosis) or PREFIX_SECOND (secondary diagnosis).
+
+.       Chief complaint (G_REASON): This group includes medcinid 1718 (chief
+complaint free text).
+
+.       Counseling/Education (G_EDUCATION): This group includes findings
+with a termtype of TYPE_RX (therapy) and a blank chart.prefix and an rxcode
+of RX_PATED (counseling and education).
+
+.       Current Medication (G_CURMED): This group includes findings with a
+termtype of TYPE_RX (therapy) and a blank chart.prefix and an rxcode of
+either RX_MED (non-narcotic medications) or RX_NARC (narcotic medications).
+
+.       Discussed (G_DISCUSS): This group includes all findings with a
+chart.prefix of PREFIX_DISCUS (discussion of) or PREFIX_DISCUSRISK
+(discussion of risk of). Note that to avoid textual redundancy during
+presentation, change chart.prefix of PREFIX_DISCUS to PREFIX_BLANK and
+PREFIX_DISCUSRISK to PREFIX_RISKOF (risk of) after this group determination
+is made.
+
+.       Family History (G_FAM_HIST): This group includes all findings with a
+chart.prefix of PREFIX_FAMILY (family history of). In addition, some
+findings embody the concept of "family history" in their context. Obtain a
+search list for these findings using the search word string, "FAMILY
+HISTORY" (see "Searching for MEDCIN Terms: Word Search"); if the medcinid in
+question is in the resulting list, the finding should be placed in this
+group.
+
+.       History of Present Illness (G_HPI): This group includes all findings
+with a termtype of TYPE_SYM (symptoms) and chart.prefix other than
+PREFIX_HISTORY (history of) which have not been flagged as "review of
+systems" findings during data entry.
+Symptoms can belong to either G_HPI or G_ROS groups. The group determination
+is made during data entry based on the type of encounter. In an encounter
+where the patient has a presenting illness, patient related symptoms are
+considered to be history of present illness. Where the patient is presenting
+no illness (i.e. annual physical, routine checkup, etc.), the symptoms
+entered during the encounter would be considered to be a review of systems.
+The data entry program should have a mechanism that allows this
+determination.
+
+.       Notes (G_NOTE): This group includes medcinid 44460 (therapy free
+text).
+
+.       Objective (G_OBSERV): This group includes medcinid 11454 (objective
+free text).
+
+.       Other (G_OTHER): This group includes any finding not captured by any
+of the other determinations.
+
+.       Past Medical History (G_PAST_MED_HIST): This group includes findings
+with a termtype of either TYPE_SYM (symptoms) or TYPE_PHY (physical exam)
+findings and a chart.prefix of PREFIX_HISTORY. Also include any finding with
+a termtype of TYPE_DX not captured elsewhere.
+
+.       Personal History (G_PER_HIST): This group includes findings with a
+termtype of TYPE_HIST (history) not captured elsewhere.
+
+.       Physical findings (G_PHYSICAL): This group includes all findings
+with a termtype of TYPE_PHY and a chart.prefix of other than PREFIX_HISTORY.
+
+.       Plan (G_PLAN): This group includes all findings with a chart.prefix
+of PREFIX_FOLLOWUP (follow-up for). It also includes medcinid 19467 (plan
+free text) and medcinid 80566 (implementation specific system-generated care
+plan text). It also includes all findings with a termtype of TYPE_TEST
+(tests) or TYPE_RX (therapy) and have a chart.prefix of PREFIX_EVALUATE
+(evaluate preoperatively for), PREFIX_ORDER (ordered), PREFIX_SCHEDULE
+(scheduled for), PREFIX_REFERELS (referred elsewhere for), PREFIX_RULEOUT
+(rule out).
+
+.       Practice Management (G_EVAL): This group includes medcinid 48277
+(visit status), as well as findings which are its children. One method is to
+obtain the property record for 48277 and save its nodekey for comparison
+purposes. Also include medcinids 44693 (evaluation & management services
+free text) and 46015 (patient information sheets for recording purposes).
+
+.       Previous tests (G_PAST_TESTS): This group includes findings with a
+termtype of TYPE_TESTS not captured elsewhere.
+
+.       Previous therapy (G_PAST_THERAPY): This group includes findings with
+a termtype of TYPE_RX not captured elsewhere. Note that you may wish to
+combine this group with Past Medical History.
+
+.       Referred here (G_REFERDX): This group includes all findings which
+have a chart.prefix of PREFIX_REFERDX (referral diagnosis of).
+
+.       Review of Systems (G_ROS): This group includes all findings with a
+termtype of TYPE_SYM (symptoms) and chart.prefix other than PREFIX_HISTORY
+which have been flagged as "review of systems" findings during data entry.
+See note above for History of Present Illness.
+
+.       Subjective (G_HIST): This group includes medcinid 4415 (subjective
+free text).
+
+.       Test conclusions (G_TESTCON): This group includes all findings
+within the range of medcinids 29005 through 29014 with a termtype of
+TYPE_TEST and chart.onset is either null or within one day of the
+chart.entrydate.
+
+.       Tests (G_TESTS): This group includes all findings with a termtype of
+TYPE_ TEST and chart.onset is either null or within one day of the
+chart.entrydate, and are not classifiable as group G_TESTCON.
+
+.       Therapy (G_THERAPY): This group includes findings with a termtype of
+TYPE_RX (therapy) and a blank chart.prefix and an rxcode which is not
+RX_VACC (vaccines), RX_PATED (counsling and education), RX_MED (non-narcotic
+medication), or RX_NARC (narcotic medication). Also include findings with a
+termtype of TYPE_RX (therapy) and chart.onset is either null or within one
+day of the chart.entrydate.
+
+.       Vaccinations (G_VACCINES): This group includes findings with a
+termtype of TYPE_RX (therapy) and a blank chart.prefix and an rxcode of
+RX_VACC (vaccines).
+
+
+
+.       Chief complaint (medcinid 1718):
+.       Assessment (medcinid 35832):
+.       Objective (medcinid 11454):
+.       Evaluation & management (medcinid 44693):
+.       Plan (medcinid 19467):
+.       Subjective (medcinid 4415)
+.       Therapy (medcinid 44460):
+.       Phone call chief concern (medcinid 2125):
+.       System-generated care plan text (80566): implementation specific
+.       Correspondence sent (medcinid 49941): This is used to annotate a chart with an indication that a letter has been generated.
+.       Patient care reviewed (medcinid 49942):
+.       Patient information sheets (medcinid 46015): This is used to document the delivery of patient information sheets to the patient.
+.       Signed by (medcinid 49942):
+
+
+codename        char    byte    10      Names of MEDCIN term qualifiers .
+These codes should be stored for each MEDCIN finding in a patient's chart.
+prefix
+modifier
+result
+status
+                                
+Names of codes referenced by the rxdose table.
+rxstrunit
+rxform
+rxquanunit
+rxroute
+rxfreq
+rxwhen
+
+Names of demographic codes referenced by the dxsex table.
+gender
+race
+religion
+ethnicity
+
+
+
+order   num     short   3       Display presentation order
+
+code    char    byte    10      Unique code for qualifier.  
+These qualifiers should be available to attach to any entered finding to enhance its meaning. This list is used to build a prompt list for user selection.  The length of prefix, modifier, and status codes is 2 bytes; the length of result is 1 byte.  The length of all demographic codes is 1 byte. The  lengths for rxdose codes vary.
+
+Description char        byte    80      
+Description of the qualifier.  This description is typically used to display to the user when prompt lists are built using this table.
+
+prefix examples: history of, ordered, family history of, risk of.
+modifier examples: tiny, large, trace, mild, severe, partial.
+status examples: improving, worsening, louder, softer.
+result examples: high, low, normal, abnormal.
+                                
+The result qualifier codes should be calculated, for terms with measurement values, by using the age range or property tables
+
+
+
+History, Family History, Allergy, Order, and Other (includes a blank prefix). To be considered a parent - child match, the prefix of both findings must be in the same category. These categories are:
+.       Family history: F, F0 through F9, FB, FC, FJ, FK, FL, FM
+.       History: H, HR, HU, PH, RV, UN
+.       Allergy: AL, IN, HY
+.       Order: CO, CT, DC, MD, O, OC, OP, OX, RX
+.       Other: blank, any not listed above

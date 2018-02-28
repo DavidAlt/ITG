@@ -1,0 +1,23 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" processModel="Default" domainUsage="Default" appbase="C:\Repo\Dropbox\AHLTA\source\Codeplex" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="ITG.Desktop.Tests\bin\Debug\ITG.Desktop.Tests.dll" />
+    <assembly path="ITG.Common.Tests\bin\Debug\ITG.Common.Tests.dll" />
+    <assembly path="DALT.Controls.Test\bin\Debug\DALT.Controls.Test.dll" />
+    <assembly path="DALT.Utility.Tests\bin\Debug\DALT.Utility.Tests.dll" />
+    <assembly path="ITG.MedcinEditor.Tests\bin\Debug\ITG.MedcinEditor.Tests.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="ITG.Desktop\bin\Release\ITG.Desktop.exe" />
+    <assembly path="ITG.MedcinEditor\bin\Release\ITG.MedcinEditor.exe" />
+    <assembly path="ITG.Common\bin\Release\ITG.Common.dll" />
+    <assembly path="DALT.Controls\bin\Release\DALT.Controls.dll" />
+    <assembly path="DALT.Utility\bin\Release\DALT.Utility.dll" />
+    <assembly path="ColorTester\bin\Release\ColorTester.exe" />
+    <assembly path="ITG.Desktop.Tests\bin\Release\ITG.Desktop.Tests.dll" />
+    <assembly path="ITG.Common.Tests\bin\Release\ITG.Common.Tests.dll" />
+    <assembly path="DALT.Controls.Test\bin\Release\DALT.Controls.Test.dll" />
+    <assembly path="DALT.Utility.Tests\bin\Release\DALT.Utility.Tests.dll" />
+    <assembly path="ITG.MedcinEditor.Tests\bin\Release\ITG.MedcinEditor.Tests.dll" />
+  </Config>
+</NUnitProject>

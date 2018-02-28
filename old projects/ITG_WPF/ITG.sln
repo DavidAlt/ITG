@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{AE02FE64-E3A9-46FF-B223-3403C4006B66}"
+	ProjectSection(SolutionItems) = preProject
+		Dashboard\Utilities\ColorConverter.cs = Dashboard\Utilities\ColorConverter.cs
+		TabSorter.cs = TabSorter.cs
+		TextConverter.cs = TextConverter.cs
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ColorConverter", "ColorConverter\ColorConverter.vbproj", "{B786420E-5CC3-4FF6-B178-560028B2E1F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{720022AC-1346-4F59-9576-ED1F9848CEF0}"
+	ProjectSection(SolutionItems) = preProject
+		Adding a screen.txt = Adding a screen.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{33349B15-34B0-4F4E-BC85-1A7B15C2A9C9}.Release|x86.ActiveCfg = Release|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B786420E-5CC3-4FF6-B178-560028B2E1F5}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

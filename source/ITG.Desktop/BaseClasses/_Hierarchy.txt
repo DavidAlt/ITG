@@ -1,0 +1,15 @@
+﻿Items in parentheses are end-of-the-line
+
+DALT.Utility.ViewModelBase
+  CanvasItemBase
+	MovableCanvasItemBase
+	  TemplateItemBase
+		ContainerItemBase
+		  (FrameVM)
+		  (RibbonVM)
+		MedcinItemBase
+		(8449VM)
+		(ResourceItem)
+	  (LabelVM)
+	(TemplateVM)
+	  

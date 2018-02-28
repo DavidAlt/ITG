@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{68F69A0D-B401-4267-A772-4EEF80036BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorConverter", "ColorConverter\ColorConverter.csproj", "{7E55DC21-8B93-4292-9206-F716B97C3F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{6BC4FD44-8800-447E-8A45-BBCD8B66BB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextOps", "TextConverter\TextOps.csproj", "{BDA85E29-5254-42C7-B6DF-3DB45E4704FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabSorter", "TabSorter\TabSorter.csproj", "{1923F664-3D24-4803-A3A6-E6804B655FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTemplate", "FormTemplate\FormTemplate.csproj", "{E25C096B-1536-4276-BEC6-8E09B35F7B26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F69A0D-B401-4267-A772-4EEF80036BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F69A0D-B401-4267-A772-4EEF80036BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F69A0D-B401-4267-A772-4EEF80036BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F69A0D-B401-4267-A772-4EEF80036BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E55DC21-8B93-4292-9206-F716B97C3F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E55DC21-8B93-4292-9206-F716B97C3F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E55DC21-8B93-4292-9206-F716B97C3F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E55DC21-8B93-4292-9206-F716B97C3F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA85E29-5254-42C7-B6DF-3DB45E4704FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA85E29-5254-42C7-B6DF-3DB45E4704FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA85E29-5254-42C7-B6DF-3DB45E4704FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA85E29-5254-42C7-B6DF-3DB45E4704FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1923F664-3D24-4803-A3A6-E6804B655FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1923F664-3D24-4803-A3A6-E6804B655FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1923F664-3D24-4803-A3A6-E6804B655FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1923F664-3D24-4803-A3A6-E6804B655FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25C096B-1536-4276-BEC6-8E09B35F7B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25C096B-1536-4276-BEC6-8E09B35F7B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25C096B-1536-4276-BEC6-8E09B35F7B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25C096B-1536-4276-BEC6-8E09B35F7B26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E55DC21-8B93-4292-9206-F716B97C3F6B} = {6BC4FD44-8800-447E-8A45-BBCD8B66BB70}
+		{BDA85E29-5254-42C7-B6DF-3DB45E4704FB} = {6BC4FD44-8800-447E-8A45-BBCD8B66BB70}
+		{1923F664-3D24-4803-A3A6-E6804B655FAE} = {6BC4FD44-8800-447E-8A45-BBCD8B66BB70}
+	EndGlobalSection
+EndGlobal

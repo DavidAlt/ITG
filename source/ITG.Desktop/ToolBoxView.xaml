@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="ITG.Desktop.ToolBoxView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:di="clr-namespace:ITG.Desktop.DesignerItems"
+             xmlns:draganddrop="clr-namespace:ITG.Desktop.DragAndDrop"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="300">
+
+
+
+    <!-- This inherits the DataContext from the window, i.e MainWindowVM Style="{StaticResource ToolboxExpanderStyle}"-->
+    <Border BorderBrush="LightGray"
+            BorderThickness="1">
+        <StackPanel>
+
+            <Expander Header="Controls" IsExpanded="True" >
+
+                <ListBox > <!-- ItemTemplate="{StaticResource InToolBox}" -->
+                    
+                    <di:FrameVM Width="100" Height="20"/>
+                    <di:RibbonVM Width="100" Height="20"/>
+                    <di:LabelVM Width="100" Height="20"/>
+                    <di:DI8449VM Width="100" Height="20"/>
+                    <di:DI33562881VM Width="100" Height="20"/>
+                    <di:DI4202753VM Width="100" Height="20"/>
+
+                    <!-- Styles for the ListBoxItems, i.e the containers -->
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}">
+                            <!-- The combination of the HorizontalContentAlignment and
+                                 ScrollViewer.HorizontalScrollBarVisibility ensures that the
+                                 contents of the ListBoxItems always fill the ListBoxItems
+                                 without exceeding their width -->
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+                            <Setter Property="ToolTip" Value="{Binding Path=Tooltip}" />
+                            <Setter Property="draganddrop:DragAndDropAttachedProperties.EnabledForDrag" Value="True" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </Expander>
+        </StackPanel>
+    </Border>
+</UserControl>
+
+
+<!--<UserControl.Resources>
+
+    <DataTemplate x:Key="InToolBox" DataType="{x:Type di:DesignerItemBaseVM}">
+
+        <Grid Margin="0 3 0 3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                           IsHitTestVisible="True"
+                           Stretch="None"
+                           Source="{Binding Path=ToolBoxImageUrl, Converter={x:StaticResource UriToImageConverter}}" />
+
+
+            <TextBlock Grid.Column="1"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Margin="0 0 10 0"
+                           Text="{Binding ControlType}" />
+        </Grid>
+    </DataTemplate>
+</UserControl.Resources>-->

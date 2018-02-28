@@ -1,0 +1,37 @@
+﻿public class BGRIntToSolidColorBrushConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+value
+  Type: System.Object
+  The value produced by the binding source.
+
+targetType
+  Type: System.Type
+  The type of the binding target property.
+
+parameter
+  Type: System.Object
+  The converter parameter, i.e, data you can pass in to the method from xaml
+
+culture
+  Type: System.Globalization.CultureInfo
+  The culture to use in the converter.
+
+Return Value
+  Type: System.Object
+  A converted value. If the method returns null, the valid null value is used.
+
+Handle anticipated problems by returning DependencyProperty.UnsetValue.
+A return value of DependencyProperty.UnsetValue indicates that the converter produced no value and that the binding uses the FallbackValue, if available, or the default value instead.
+A return value of Binding.DoNothing indicates that the binding does not transfer the value or use the FallbackValue or default value.

@@ -1,0 +1,261 @@
+<mockup version="1.0" skin="wireframe" fontFace="Arial" measuredW="1000" measuredH="1200" mockupW="1000" mockupH="1200">
+  <controls>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Component" x="10" y="10" w="768" h="23" measuredW="768" measuredH="23" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="768" h="19"/>
+        <override controlID="1" x="0" y="0" w="118" h="19">
+          <text>Reason%20for%20visit%3A%20</text>
+        </override>
+        <override controlID="2" x="125" y="2" w="643" h="21"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#CC field</src>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="1000" h="1200" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <color>15658734</color>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Component" x="790" y="10" w="200" h="21" measuredW="200" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>Allergies</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Component" x="790" y="192" w="200" h="21" measuredW="200" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>Diet</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Component" x="790" y="221" w="200" h="21" measuredW="200" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>ROS</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Component" x="790" y="257" w="200" h="21" measuredW="200" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>Exam%201</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="790" y="286" w="200" h="21" measuredW="200" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>Exam%202</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Component" x="790" y="314" w="200" h="21" measuredW="200" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="200" h="19"/>
+        <override controlID="1" x="0" y="0" w="133" h="19">
+          <text>Exam%203</text>
+        </override>
+        <override controlID="2" x="183" y="2" w="17" h="19"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#8449</src>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="__group__" x="10" y="40" w="766" h="302" measuredW="766" measuredH="302" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="766" h="302" measuredW="766" measuredH="302" zOrder="0" locked="false" isInGroup="41">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="766" h="20"/>
+            <override controlID="1" x="0" y="2" w="282" h="18">
+              <text>HPI</text>
+            </override>
+            <override controlID="2" x="0" y="20" w="766" h="282">
+              <text/>
+            </override>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="749" y="21" w="-1" h="278" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="41"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="43" controlTypeID="__group__" x="790" y="40" w="200" h="140" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="200" h="140" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="43">
+          <controlProperties>
+            <override controlID="0" x="0" y="2" w="200" h="19"/>
+            <override controlID="1" x="0" y="0" w="97" h="19">
+              <text>Medications</text>
+            </override>
+            <override controlID="2" x="0" y="21" w="200" h="119"/>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="183" y="21" w="-1" h="118" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="43"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="45" controlTypeID="__group__" x="18" y="385" w="963" h="259" measuredW="963" measuredH="259" zOrder="19" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="963" h="259" measuredW="963" measuredH="259" zOrder="0" locked="false" isInGroup="45">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="963" h="17"/>
+            <override controlID="1" x="0" y="1" w="282" h="16">
+              <text/>
+            </override>
+            <override controlID="2" x="0" y="17" w="963" h="242">
+              <text>The%20patient%20was%20originally%20diagnosed%20when%20his%20PCM%20noticed%20a%2042%20kg%20weight%20loss%20over%20a%203%20month%20period.</text>
+            </override>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="946" y="17" w="-1" h="240" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="45"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="47" controlTypeID="__group__" x="10" y="660" w="300" h="152" measuredW="300" measuredH="152" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="300" h="152" measuredW="300" measuredH="152" zOrder="0" locked="false" isInGroup="47">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="300" h="17"/>
+            <override controlID="1" x="0" y="2" w="110" h="14">
+              <text>Medical%20history</text>
+            </override>
+            <override controlID="2" x="0" y="17" w="300" h="135">
+              <text/>
+            </override>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="282" y="19" w="-1" h="130" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="47"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="49" controlTypeID="__group__" x="323" y="660" w="300" h="152" measuredW="300" measuredH="152" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="300" h="152" measuredW="300" measuredH="152" zOrder="0" locked="false" isInGroup="49">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="300" h="17"/>
+            <override controlID="1" x="0" y="2" w="110" h="14">
+              <text>Social%20history</text>
+            </override>
+            <override controlID="2" x="0" y="17" w="300" h="135">
+              <text/>
+            </override>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="283" y="18" w="-1" h="131" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="49"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="51" controlTypeID="__group__" x="10" y="820" w="300" h="150" measuredW="300" measuredH="150" zOrder="12" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="300" h="150" measuredW="300" measuredH="150" zOrder="0" locked="false" isInGroup="51">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="300" h="24"/>
+            <override controlID="1" x="0" y="1" w="147" h="14">
+              <text>Surgeries/Procedures</text>
+            </override>
+            <override controlID="2" x="0" y="26" w="300" h="124">
+              <text/>
+            </override>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="282" y="27" w="-1" h="121" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="51"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="53" controlTypeID="__group__" x="323" y="820" w="300" h="150" measuredW="300" measuredH="150" zOrder="13" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="300" h="150" measuredW="300" measuredH="150" zOrder="0" locked="false" isInGroup="53">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="300" h="24"/>
+            <override controlID="1" x="0" y="1" w="147" h="14">
+              <text>Family%20history</text>
+            </override>
+            <override controlID="2" x="0" y="26" w="300" h="124">
+              <text/>
+            </override>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="283" y="27" w="-1" h="121" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="53"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="55" controlTypeID="__group__" x="629" y="660" w="363" h="308" measuredW="363" measuredH="308" zOrder="14" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Component" x="0" y="0" w="363" h="308" measuredW="363" measuredH="308" zOrder="0" locked="false" isInGroup="55">
+          <controlProperties>
+            <override controlID="0" x="0" y="0" w="363" h="22"/>
+            <override controlID="1" x="0" y="0" w="182" h="20">
+              <text>Physical%20exam%20%28free%20text%29</text>
+            </override>
+            <override controlID="2" x="0" y="21" w="363" h="287">
+              <text/>
+            </override>
+            <override controlID="-1"/>
+            <src>./assets/symbols.bmml#MultiLine</src>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="345" y="23" w="-1" h="281" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="55"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Accordion" x="10" y="973" w="979" h="220" measuredW="286" measuredH="110" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>IBD%20Classification%20Ribbon%20%28expands%20on%20clicking%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Component" x="15" y="1007" w="288" h="180" measuredW="288" measuredH="180" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="288" h="19"/>
+        <override controlID="1" x="0" y="0" w="166" h="19">
+          <text>IBD%20Classification</text>
+        </override>
+        <override controlID="2" x="0" y="21" w="288" h="159">
+          <text>Status%3A%20Clinical%20remission%0ADiagnosis%3A%20Jejunoileocolonic%20Crohn%27s%20Disease%2C%20%0A%20%20with%20perianal%20involvement%0ADate%20of%20Dx%3A%2011/2013%0AInitial%20Treatment%3A%20Infliximab%3A%2011/2013%0ACurrent%20dosing%3A%205%20mg/kg%2C%20Q8%0ANext%20Endoscopy%3A%203/2015</text>
+        </override>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#MultiLine</src>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Component" x="323" y="1007" w="288" h="179" measuredW="288" measuredH="179" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="2" w="288" h="19"/>
+        <override controlID="1" x="0" y="0" w="166" h="19">
+          <text>IBD%20Health%20Maintenance</text>
+        </override>
+        <override controlID="2" x="0" y="21" w="288" h="158">
+          <text>Tracking%20something%201%0ATracking%20something%202%0AWay%20overdue%20for%20blah%0AIsn%27t%20this%20sort%20of%20the%20same%20thing%20as%20before%3F</text>
+        </override>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#MultiLine</src>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Accordion" x="9" y="350" w="979" h="301" measuredW="354" measuredH="110" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Initial%20Presentation%20/%20Additional%20HPI%20%28expands%20when%20clicked%29</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

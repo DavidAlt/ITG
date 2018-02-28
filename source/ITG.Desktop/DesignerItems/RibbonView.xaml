@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:di="clr-namespace:ITG.Desktop.DesignerItems">
+
+    <!-- 8449 object -->
+    <DataTemplate DataType="{x:Type di:RibbonVM}">
+        <Canvas ClipToBounds="True" IsHitTestVisible="False"
+                Width="{Binding Path=Width}"
+                Height="{Binding Path=Height}">
+            <Rectangle IsHitTestVisible="False" 
+                       Width="{Binding Width}" Height="{Binding Height}"
+                       Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <Button Canvas.Left="{Binding ID_RibbonLeftOffset}" Canvas.Top="{Binding ID_RibbonTopOffset}" Width="20" Height="20" Content="&lt;&lt;" />
+        </Canvas>
+    </DataTemplate>
+
+</ResourceDictionary>

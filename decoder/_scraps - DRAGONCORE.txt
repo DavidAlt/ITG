@@ -1,0 +1,126 @@
+Last updated: 2016-07-11
+
+# TODO
+* Make TSWF link section more robust - include obstetrics, ?geriatrics
+* Need an "Updated: DD MMM YYYY" label for the form
+* Need clinical resources links
+* Need to define color schemes
+* Need to make ROS section coder-compliant (i.e. list the systems)
+* Consider an expanding ROS section - maybe the tree thingy?
+* Can we build in a lbs/oz to kg converter, and inches to cm?
+* Add JC screening
+	1,845,283,988,303,5141,8449," |||||||18|80|YCN|0|0|X|X|0|||0|0|0|0|0|0|||","F=Arial|B=T|T=T","JC Screening~ ~Annual screening for Joint Commission reviewed/conducted for communication and learning preferences and cultural/religious needs. ~Instructions were understood by the caregiver/patient.~ "
+	3,10,85,490,490,5141,4202753," |||||||18|80|YCN|0|0|X|X|0|||0|0|0|0|0|0|||","F=Arial|T=T","JC Screening~ ~Annual screening for Joint Commission reviewed/conducted for communication and learning preferences and cultural/religious needs. ~Instructions were understood by the caregiver/patient.~ "
+* Counseling: need asthma, inhaler teaching, stimulant medication, antidepressant medication, triggers, allergic reactions, URI/illness counseling, constipation
+* screening questionnaires: SCARED, PSC
+* Tidy developmental screening section
+
+# HPI
+ * Alternate HEADSSS for other providers
+
+# PHYSICAL EXAM  
+ add gender check to "No inguinal hernia"
+ Add PE elements: 
+     infant hip exam
+     tonsillar hypertrophy
+
+ 1,956,505,1148,525,64974,67841," ||||0||+|19|80|YCVUN|0|0|X|X|0|0|4|0|0|1|0|0||||","F=Arial|T=T",":0:4:1:Tonsil~"
+ 1,956,525,1148,545,64974,11009,"R1||||0||+|19|80|YCVUN|0|0|X|X|0|0|4|0|0|1|0|0||||","F=Arial|T=T",":0:4:1:Tonsil~"
+ 1,956,545,1148,565,64974,10497,"R2||||0||+|19|80|YCVUN|0|0|X|X|0|0|4|0|0|1|0|0||||","F=Arial|T=T",":0:4:1:Tonsil~"
+ 1,956,565,1148,585,64974,67841,"R3||||0||+|19|80|YCVU|0|0|X|X|0|0|4|0|0|1|0|0||||","F=Arial|T=T",":0:4:1:Tonsil~"
+
+ normal back/scoliosis (forward bend test; iliac crests level)
+ normal hips/leg length
+ normal thyroid
+
+
+# PROCEDURE TAB
+ ECG, circumcision, incision & drainage, foreign body removal, cryotherapy, other
+
+
+1,747,655,949,655,0,1,"|||||||0|0||0|0|||0|||0|0|1|0|0|0|||","F=Arial|T=T","12566463:0:0:1:"
+1,753,667,842,685,0,32769," |||||||0|0||0|0|||0|||0|0|1|0|0|0|||","F=Arial|T=T","BP percentiles: "
+1,844,663,889,683,0,16384," |||||||0|0||0|0|||0|||0|0|1|0|0|0|||","F=Arial|O=257","boys:#4"
+1,896,663,941,683,0,16384," |||||||0|0||0|0|||0|||0|0|1|0|0|0|||","F=Arial|O=257","girls:#5"
+1,753,688,941,708,0,16384," |||||||0|0||0|0|||0|||0|0|1|0|0|0|||","F=Arial|O=257","Mid-parental height:#6"
+
+
+===
+* 47MDGCubed
+* DMHSRSi
+* UpToDate
+* LexiComp
+* Handouts (Vanderbilts, ACT, SANDAP, ASQ, MCHAT-R, PHQ-9, EFMP, acne, nutrition, triggers, asthma AP, eczema AP, ADHD handouts, stationary, constipation)
+* ECIS phone number 1-800-628-5115 (http://www.dars.state.tx.us/ecis/index.shtml)
+* IMPAX
+* HAIMS
+* HELP
+
+
+# TEMPLATE IDs
+  ClusterIds: (updated 2015-12-07)
+    1 - practice management cluster
+    2 - birth history cluster
+    3 - female genitalia cluster
+	
+
+# RadioButtonIds: (updated 2016-04-21)
+1 - ROS
+2 - birth hx
+3 - female genitals
+4 - calms self
+5 - rolls from front onto back
+6 - imitates sound
+7 - tries to do what parents do
+8 - drinks with minimal spilling
+9 - helps with simple tasks
+10 - jumps in place
+11 - plays interactively with other children
+12 - plays make-believe
+13 - throws a ball overhand
+14 - can stack 6-8 blocks
+15 - names four colors
+16 - starting to smile
+17 - head steady in upright posture
+
+
+  Logic Ids (updated 2015-12-07)
+    1 - Page 1 | HISTORY FRAME
+    2 - Page 1 | SURPLUS FRAME
+    3 - Page 1 | Newborn/Infant exam
+    4 - Page 1 | Child/Adolescent exam
+    5-19 - Page 2 | Milestones
+
+
+
+  RibbonIds: (updated 2016-03-08)
+    1 - PAGE 1 MASTER RIBBON
+
+    2 - PAGE 2 2 week		66127	5
+    3 - PAGE 2 1 month		283047	4
+    4 - PAGE 2 2 month		281766	10
+    5 - PAGE 2 4 month		281767	10
+    6 - PAGE 2 6 month		281768	8
+    7 - PAGE 2 9 month		281769	8 = 45 items
+
+    8 - PAGE 2 12 month		281770	13
+    9 - PAGE 2 15 month		281771	9
+   10 - PAGE 2 18 month		281772	10
+   11 - PAGE 2 24 month		66129	13
+   12 - PAGE 2 30 month		66129	10 = 55 items
+
+   13 - PAGE 2 3 yr		281773	11
+   14 - PAGE 2 4 yr		281774	12
+   15 - PAGE 2 5-6 yr		281774	10
+   16 - PAGE 2 7-10 yr		281775	6 = 39 items
+
+
+
+
+# PAGE 1 NOTES
+
+
+# PAGE 2 NOTES
+
+# PAGE 3 NOTES
+

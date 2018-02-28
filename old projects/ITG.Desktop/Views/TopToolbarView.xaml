@@ -1,0 +1,23 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="ITG.Desktop.Views.TopToolbarView"
+	x:Name="UserControl">
+
+    <Grid x:Name="LayoutRoot">
+        <ToolBarTray>
+            <ToolBar Band="1" BandIndex="1">
+                <Button Content="Button 1" />
+                <Button Content="Button 2" />
+                <Button Content="Button 3" />
+                <Separator/>
+                <Button Content="Button 4" />
+                <Button Content="Button 5" />
+                <Button Content="Button 6" />                
+            </ToolBar>
+        </ToolBarTray>
+    </Grid>
+</UserControl>

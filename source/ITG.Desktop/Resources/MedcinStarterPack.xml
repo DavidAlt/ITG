@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MedcinTerms>
+  <MedcinTerm>
+    <MedcinCode>1718</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Chief complaint</DefaultLabel>
+    <UserLabel />
+    <Category>CC</Category>
+    <StateOneText>The Chief Complaint is: </StateOneText>
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>115033</MedcinCode>
+    <Prefix />
+    <DefaultLabel>History of present illness</DefaultLabel>
+    <UserLabel />
+    <Category>HPI</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>115033</MedcinCode>
+    <Prefix>AD</Prefix>
+    <DefaultLabel />
+    <UserLabel>Additional HPI</UserLabel>
+    <Category>HPI</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>122305</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Allergies</DefaultLabel>
+    <UserLabel />
+    <Category>ALL</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>195087</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Medications</DefaultLabel>
+    <UserLabel />
+    <Category>MEDS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>120054</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Past medical history</DefaultLabel>
+    <UserLabel />
+    <Category>PMH</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>3399</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Drug allergies</DefaultLabel>
+    <UserLabel />
+    <Category>PMH</Category>
+    <StateOneText>Drug allergies</StateOneText>
+    <StateTwoText>No known drug allergies</StateTwoText>
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>3406</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Past surgical history</DefaultLabel>
+    <UserLabel />
+    <Category>PSH</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>5098</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Family history</DefaultLabel>
+    <UserLabel />
+    <Category>FAM</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>115277</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Feeling tired (fatigue)</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>5</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Fever</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>7</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Chills</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>272</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Night sweats</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>2993</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Involuntary weight loss</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>1478</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Feeling overweight</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+  <MedcinTerm>
+    <MedcinCode>1491</MedcinCode>
+    <Prefix />
+    <DefaultLabel>Feeling underweight</DefaultLabel>
+    <UserLabel />
+    <Category>ROS</Category>
+    <StateOneText />
+    <StateTwoText />
+    <StateOneIsPositiveFinding>true</StateOneIsPositiveFinding>
+  </MedcinTerm>
+</MedcinTerms>

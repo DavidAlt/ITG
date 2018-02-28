@@ -1,0 +1,143 @@
+﻿<Window x:Class="ITG.Desktop.Shell"
+        x:Name="_shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:des="clr-namespace:ITG.Desktop.Designer"
+        xmlns:di="clr-namespace:ITG.Desktop.DesignerItems"
+        xmlns:my="clr-namespace:ITG.Desktop"
+        xmlns:utility="clr-namespace:DALT.Utility;assembly=DALT.Utility"
+        xmlns:dock="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:drag="clr-namespace:ITG.Desktop.DragAndDrop"
+        xmlns:v="clr-namespace:ITG.Desktop.Views"
+        Title="Illegitimate Template Generator"
+        WindowState="Maximized"
+        Height="768" Width="1024">
+    
+
+    
+    
+    <Grid x:Name="_shellLayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="_shellLayoutTop" Grid.Row="0" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="134" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Expander Style="{StaticResource BlackExpanderStyle}">
+                <StackPanel>
+                    <Button Content="Button 1" />
+                    <Button Content="Button 2" />
+                </StackPanel>
+
+            </Expander>
+            <!--
+            <v:ShellLogoView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+            <v:ShellMainMenuView Grid.Row="0" Grid.Column="1" />-->
+
+            <Grid Grid.Row="1" Grid.Column="1" Height="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <v:TemplatePropertiesBarView Grid.Column="0"/>
+                <v:TemplatePageSelectorView Grid.Column="1" Grid.ColumnSpan="2"/>
+            </Grid>
+            
+        </Grid>
+        
+
+        <dock:DockingManager x:Name="_dockManager" Grid.Row="1">
+            <!-- LayoutRoot is the outermost container for the LayoutPanel and the AnchorSides -->
+            <dock:LayoutRoot x:Name="_dockLayoutRoot">
+                <dock:LayoutRoot.BottomSide>
+                    <dock:LayoutAnchorSide>
+                        <dock:LayoutAnchorGroup>
+                            <dock:LayoutAnchorable Title="TemplateDataGrid"
+                                                   AutoHideHeight="200"
+                                                   FloatingHeight="600"
+                                                   FloatingWidth="800"
+                                                   CanClose="False" 
+                                                   CanHide="False" 
+                                                   CanFloat="True">
+                                <v:TemplateDataGridView />
+                            </dock:LayoutAnchorable>
+                            <dock:LayoutAnchorable Title="TemplateHeuristicsView"
+                                                   AutoHideHeight="200"
+                                                   CanClose="False" 
+                                                   CanHide="False" 
+                                                   CanFloat="False">
+                                <v:TemplateHeuristicsView />
+                            </dock:LayoutAnchorable>
+                            <dock:LayoutAnchorable Title="LogView"
+                                                   AutoHideHeight="200"
+                                                   CanClose="False" 
+                                                   CanHide="False" 
+                                                   CanFloat="False">
+                                <v:LogView />
+                            </dock:LayoutAnchorable>
+                        </dock:LayoutAnchorGroup>
+                    </dock:LayoutAnchorSide>
+                </dock:LayoutRoot.BottomSide>
+
+                <dock:LayoutPanel Orientation="Horizontal"> <!-- LayoutPanel is the main inner content container -->
+                    <dock:LayoutAnchorablePane DockWidth="132"> <!-- Left anchorable pane (no pane group in this instance) / ToolBox -->
+                        <dock:LayoutAnchorable Title="ToolBox" 
+                                               AutoHideWidth="132" 
+                                               FloatingWidth="132" 
+                                               CanClose="False" 
+                                               CanHide="False" 
+                                               CanFloat="False">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <v:TemplateItemToolboxView />
+                            </ScrollViewer>
+                        </dock:LayoutAnchorable> <!-- LayoutAnchorable is the actual content container -->
+                    </dock:LayoutAnchorablePane><!-- End of ToolBox pane -->
+                    
+                    <dock:LayoutDocumentPaneGroup Orientation="Vertical"><!-- LayoutDocumentPaneGroup is the outer container housing the two DocumentPanes -->
+                        <dock:LayoutDocumentPane> <!-- Upper document pane; each LayoutDocumentPane has its own DropDownButton -->
+                            <!-- DESIGNER -->
+                            <!-- LayoutDocument is the actual content container -->
+                            <dock:LayoutDocument Title="DesignerSurface"
+                                                 CanClose="False" 
+                                                 CanFloat="False">
+                                <v:TemplateDesignerCanvasView />
+                            </dock:LayoutDocument> <!-- End DESIGNER -->
+                        </dock:LayoutDocumentPane> <!-- End top DocumentPane (housing the designer) -->
+                    </dock:LayoutDocumentPaneGroup> <!-- End document section -->
+                            
+                    <!-- Right anchorable group / properties -->
+                    <dock:LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="300" FloatingWidth="300">
+                        <dock:LayoutAnchorablePane>
+                            <dock:LayoutAnchorable Title="Properties" 
+                                                   AutoHideWidth="300"
+                                                   CanClose="False" 
+                                                   CanHide="False" 
+                                                   CanFloat="False">
+                                <ScrollViewer>
+                                    <StackPanel>
+                                        <Button Content="PropertyView1" />
+                                        <Button Content="PropertyView2" />
+                                        <Button Content="PropertyView3" />
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </dock:LayoutAnchorable>
+                        </dock:LayoutAnchorablePane>
+                    </dock:LayoutAnchorablePaneGroup>
+                </dock:LayoutPanel>
+            </dock:LayoutRoot>
+        </dock:DockingManager>
+
+        <v:ShellStatusBarView Grid.Row="2" Grid.ColumnSpan="4" />
+    </Grid>
+</Window>

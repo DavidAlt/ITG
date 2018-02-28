@@ -1,0 +1,265 @@
+AHLTAstring ---TRANSLATE----> Textbox.Text = NormalString 
+Textbox.Text.NOrmalString ----TRANSLATE----> AHLTAString
+
+Private CC As String = "1,376,46,600,66,1718,33562881,""|||||||19|180|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""CC"
+Private HPI1 As String = "1,630,37,720,55,115033,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HPI"
+Private HPI2 As String = "1,630,55,720,74,115033,8449,""AD|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""More HPI"
+Private ROS1 As String = "1,750,37,860,55,112344,8449,""AL|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Complete ROS"
+Private ROS21 As String = "1,750,55,860,74,112344,8449,""AO|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Focused ROS"
+Private ALL As String = "1,376,111,480,130,122305,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Allergies"
+Private MED As String = "1,376,130,480,148,195087,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Medications"
+Private PMH As String = "1,510,111,600,130,120054,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PMHx"
+Private PSH As String = "1,510,130,600,148,3406,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PSHx"
+Private FHX As String = "1,630,111,720,130,5098,8449,""F|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""FHx"
+Private SOC As String = "1,630,130,720,148,122667,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Soc"
+Private IMM As String = "1,750,111,860,130,195089,8449,""|||||||19|190|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Immunizations"
+Private BIRTH As String = "1,750,130,860,148,123077,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Birth Hx"
+Private PM As String = "1,376,185,480,204,42435,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Tracking"
+Private AG As String = "1,376,204,480,222,115034,8449,""C|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Guidance"
+Private DIET As String = "1,510,185,600,204,120052,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Diet"
+Private HABITS As String = "1,510,204,600,222,120044,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Lifestyle"
+Private HEADS As String = "1,630,185,720,204,115034,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HEADSSS"
+Private DEP As String = "1,630,204,720,222,220256,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""EPDS"
+Private PE1 As String = "1,750,185,860,204,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Infant"
+Private PE2 As String = "1,750,204,860,222,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Child"
+
+' txtInlineHelp.Text = CChelp
+                ' txtInlineHelp.Text = HPI1help
+                ' txtInlineHelp.Text = HPI2help
+                ' txtInlineHelp.Text = ROS1help
+                ' txtInlineHelp.Text = ROS2help
+                ' txtInlineHelp.Text = ALLhelp
+                ' txtInlineHelp.Text = MEDhelp
+                ' txtInlineHelp.Text = PMHhelp
+                ' txtInlineHelp.Text = PSHhelp
+                ' txtInlineHelp.Text = FAMhelp
+                ' txtInlineHelp.Text = SOChelp
+                ' txtInlineHelp.Text = IMMhelp
+' txtInlineHelp.Text = BIRTHhelp
+' txtInlineHelp.Text = PMhelp
+' txtInlineHelp.Text = AGhelp
+' txtInlineHelp.Text = DIEThelp
+' txtInlineHelp.Text = HABITShelp
+' txtInlineHelp.Text = HEADShelp
+' txtInlineHelp.Text = DEPhelp
+' txtInlineHelp.Text = PE1help
+' txtInlineHelp.Text = PE2help
+
+
+    Private Sub InitializeHelpStrings()
+        CChelp = ""
+        HPI1help = ""
+        HPI2help = ""
+        ROS1help = ""
+        ROS2help = ""
+        ALLhelp = ""
+        MEDhelp = ""
+        PMHhelp = ""
+        PSHhelp = ""
+        FAMhelp = ""
+        SOChelp = ""
+        IMMhelp = ""
+        BIRTHhelp = ""
+        PMhelp = ""
+        AGhelp = ""
+        DIEThelp = ""
+        HABITShelp = ""
+        HEADShelp = ""
+        DEPhelp = ""
+        PE1help = ""
+        PE2help = ""
+    End Sub
+
+
+        Prefix.Item(sel.CC) = 
+        Prefix.Item(sel.HPI1) = 
+        Prefix.Item(sel.HPI2) = 
+        Prefix.Item(sel.ROS1) = 
+        Prefix.Item(sel.ROS2) = 
+        Prefix.Item(sel.ALL) = 
+        Prefix.Item(sel.MED) = 
+        Prefix.Item(sel.PMH) = 
+        Prefix.Item(sel.PSH) = 
+        Prefix.Item(sel.FAM) = 
+        Prefix.Item(sel.SOC) = 
+        Prefix.Item(sel.IMM) = 
+        Prefix.Item(sel.BIRTH) = 
+        Prefix.Item(sel.PM) = 
+        Prefix.Item(sel.AG) = 
+        Prefix.Item(sel.DIET) = 
+        Prefix.Item(sel.HABITS) = 
+        Prefix.Item(sel.HEADS) = 
+        Prefix.Item(sel.DEP) = 
+        Prefix.Item(sel.PE1) = 
+        Prefix.Item(sel.PE2) = 
+
+        Suffix.Item(sel.CC) = 
+        Suffix.Item(sel.HPI1) = 
+        Suffix.Item(sel.HPI2) = 
+        Suffix.Item(sel.ROS1) = 
+        Suffix.Item(sel.ROS2) = 
+        Suffix.Item(sel.ALL) = 
+        Suffix.Item(sel.MED) = 
+        Suffix.Item(sel.PMH) = 
+        Suffix.Item(sel.PSH) = 
+        Suffix.Item(sel.FAM) = 
+        Suffix.Item(sel.SOC) = 
+        Suffix.Item(sel.IMM) = 
+        Suffix.Item(sel.BIRTH) = 
+        Suffix.Item(sel.PM) = 
+        Suffix.Item(sel.AG) = 
+        Suffix.Item(sel.DIET) = 
+        Suffix.Item(sel.HABITS) = 
+        Suffix.Item(sel.HEADS) = 
+        Suffix.Item(sel.DEP) = 
+        Suffix.Item(sel.PE1) = 
+        Suffix.Item(sel.PE2) = 
+
+        Content.Item(sel.CC) = 
+        Content.Item(sel.HPI1) = 
+        Content.Item(sel.HPI2) = 
+        Content.Item(sel.ROS1) = 
+        Content.Item(sel.ROS2) = 
+        Content.Item(sel.ALL) = 
+        Content.Item(sel.MED) = 
+        Content.Item(sel.PMH) = 
+        Content.Item(sel.PSH) = 
+        Content.Item(sel.FAM) = 
+        Content.Item(sel.SOC) = 
+        Content.Item(sel.IMM) = 
+        Content.Item(sel.BIRTH) = 
+        Content.Item(sel.PM) = 
+        Content.Item(sel.AG) = 
+        Content.Item(sel.DIET) = 
+        Content.Item(sel.HABITS) = 
+        Content.Item(sel.HEADS) = 
+        Content.Item(sel.DEP) = 
+        Content.Item(sel.PE1) = 
+        Content.Item(sel.PE2) = 
+
+{ "1,376,46,600,66,1718,33562881,""|||||||19|180|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""CC", _
+"1,630,37,720,55,115033,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HPI", _
+"1,630,55,720,74,115033,8449,""AD|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""More HPI", _
+"1,750,37,860,55,112344,8449,""AL|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Complete ROS", _
+"1,750,55,860,74,112344,8449,""AO|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Focused ROS", _
+"1,376,111,480,130,122305,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Allergies", _
+"1,376,130,480,148,195087,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Medications", _
+"1,510,111,600,130,120054,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PMHx", _
+"1,510,130,600,148,3406,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PSHx", _
+"1,630,111,720,130,5098,8449,""F|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""FHx", _
+"1,630,130,720,148,122667,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Soc", _
+"1,750,111,860,130,195089,8449,""|||||||19|190|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Immunizations", _
+"1,750,130,860,148,123077,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Birth Hx", _
+"1,376,185,480,204,42435,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Tracking", _
+"1,376,204,480,222,115034,8449,""C|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Guidance", _
+"1,510,185,600,204,120052,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Diet", _
+"1,510,204,600,222,120044,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Lifestyle", _
+"1,630,185,720,204,115034,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HEADSSS", _
+"1,630,204,720,222,220256,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""EPDS", _
+"1,750,185,860,204,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Infant", _
+"1,750,204,860,222,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Child" }
+
+
+        Prefix.Insert(sel.CC, "1,376,46,600,66,1718,33562881,""|||||||19|180|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""CC")
+        Prefix.Item(sel.HPI1) = "1,630,37,720,55,115033,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HPI"
+        Prefix.Item(sel.HPI2) = "1,630,55,720,74,115033,8449,""AD|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""More HPI"
+        Prefix.Item(sel.ROS1) = "1,750,37,860,55,112344,8449,""AL|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Complete ROS"
+        Prefix.Item(sel.ROS2) = "1,750,55,860,74,112344,8449,""AO|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Focused ROS"
+        Prefix.Item(sel.ALL) = "1,376,111,480,130,122305,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Allergies"
+        Prefix.Item(sel.MED) = "1,376,130,480,148,195087,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Medications"
+        Prefix.Item(sel.PMH) = "1,510,111,600,130,120054,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PMHx"
+        Prefix.Item(sel.PSH) = "1,510,130,600,148,3406,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""PSHx"
+        Prefix.Item(sel.FAM) = "1,630,111,720,130,5098,8449,""F|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""FHx"
+        Prefix.Item(sel.SOC) = "1,630,130,720,148,122667,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Soc"
+        Prefix.Item(sel.IMM) = "1,750,111,860,130,195089,8449,""|||||||19|190|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Immunizations"
+        Prefix.Item(sel.BIRTH) = "1,750,130,860,148,123077,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Birth Hx"
+        Prefix.Item(sel.PM) = "1,376,185,480,204,42435,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Tracking"
+        Prefix.Item(sel.AG) = "1,376,204,480,222,115034,8449,""C|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Guidance"
+        Prefix.Item(sel.DIET) = "1,510,185,600,204,120052,8449,""H|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Diet"
+        Prefix.Item(sel.HABITS) = "1,510,204,600,222,120044,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Lifestyle"
+        Prefix.Item(sel.HEADS) = "1,630,185,720,204,115034,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""HEADSSS"
+        Prefix.Item(sel.DEP) = "1,630,204,720,222,220256,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""EPDS"
+        Prefix.Item(sel.PE1) = "1,750,185,860,204,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Infant"
+        Prefix.Item(sel.PE2) = "1,750,204,860,222,208847,8449,""|||||||19|80|YCN|0|0|X|X|0|||0|0|0|0|0||||"",""|K=16777215|T=T|L="",""Child"
+
+
+        Suffix.Item(sel.CC) = "well-child visit"
+        Suffix.Item(sel.HPI1) = ".~Here for well-child check. Overall has been healthy, with no recent illnesses (except occasional URIs), ED visits, or acute appointments. " & _
+            "No parental concerns.~ ~Current diet includes _ . Making at least 6 wet diapers per day, and stooling at least once per day. Age-appropriate sleep " & _
+            "pattern. New skills include _ .~."
+        Suffix.Item(sel.HPI2) = ""
+        Suffix.Item(sel.ROS1) = "A complete review of systems was performed and was negative, except as detailed above (minimum 10 systems).~."
+        Suffix.Item(sel.ROS2) = "A focused review of systems was performed and was negative, except as detailed above (< 10 systems).~."
+        Suffix.Item(sel.ALL) = "* No known drug allergies~* No known environmental allergies~* No known food allergies~."
+        Suffix.Item(sel.MED) = "Reviewed and reconciled, including OTC/CAM meds~* No regular medication use~."
+        Suffix.Item(sel.PMH) = ".~* healthy~ ~* Birth: term birth, no chronic associated problems~* Development: reviewed; no history of delay~* Diet: reviewed; no special " & _
+            "dietary measures~* Sleep: reviewed; appropriate for age~* Vaccinations: reviewed; on regular schedule~."
+        Suffix.Item(sel.PSH) = ".~* denies ~."
+        Suffix.Item(sel.FAM) = ".~POSITIVE FOR:~* none stated~ ~NEGATIVE FOR:~* sudden death~* genetic/metabolic disease~* birth defects~* kidney disease~* childhood deafness~."
+        Suffix.Item(sel.SOC) = ".~* Lives with both parents~* Pets: none~* Smoke exposure: no~* DOES NOT attend daycare~* Contact: ~."
+        Suffix.Item(sel.IMM) = "* Receiving all immunizations on schedule~."
+        Suffix.Item(sel.BIRTH) = "_ g~* term birth (_ wga)~* newborn metabolic, hearing, and SpO2 screen were normal~* prenatal history: uncomplicated~* delivery: " & _
+            "uncomplicated SVD~* postnatal events: routine newborn discharge~."
+        Suffix.Item(sel.PM) = "Last updated: ~* developmental screen: ~* newborn screen: normal~* hearing: passed newborn screen, no concerns~* vision: no concerns~* " & _
+            "dental: NOT receiving periodic dental care~* screening for anemia, lead, and TB risk: screen at 12 mo~* BMI: not overweight or obese~* " & _
+            "lipid screen: not assessed~."
+        Suffix.Item(sel.AG) = "Age-appropriate guidance discussed, including but not limited to: lifestyle (nutrition, sleep hygiene, physical activity), safety, " & _
+            "behavior, and discipline. Signs of illness and symptom management reviewed as appropriate.~."
+        Suffix.Item(sel.DIET) = ".~* age-appropriate diet with variety of foods ~* eats meals with family; not a picky eater and not skipping meals ~* " & _
+            "fried/fatty/fast foods: ~* milk intake: ~* juice intake: ~* water intake: ~* caffeinated beverages: ~."
+        Suffix.Item(sel.HABITS) = ".~# SLEEP ~* quantity: _ hrs ~* quality: onset within _ minutes; minimal awakenings, feels refreshed afterward, not falling " & _
+            "asleep at school, no recurrent headaches ~* routine: no significant difference in weekday vs weekend sleep schedule ~* stimulants: " & _
+            "no afternoon/evening caffeine, energy drinks, or stimulant use ~* distractors: has electronic devices in bedroom with loosely monitored " & _
+            "but unrestricted access ~  ~# EXERCISE / SCREENTIME ~* overall active / sedentary lifestyle ~* gets at least 1 hour of sustained active " & _
+            "exercise daily ( ) ~* spends more than 2 leisure hours/day with electronic devices~."
+        Suffix.Item(sel.HEADS) = "# HEADSSS EXAM~H: Lives with _. No concerns with family interaction~E: _th grade, not failing any classes~A: Hangs out with " & _
+            "friends, no parties. Plays _~D: Denies current or prior use of tobacco, alcohol, marijuana, or other drugs (both illicit and prescription)~S: " & _
+            "Not dating and not sexually active~S: Denies SI/HI~S: Feels safe at home and school~."
+        Suffix.Item(sel.DEP) = "Screening for maternal depression with EPDS; total score = _ and 0 points for question 10.~."
+        Suffix.Item(sel.PE1) = "# VITAL SIGNS: Vital signs and growth parameters reviewed~ ~# GENERAL APPEARANCE: Awake and alert; well-nourished and well-developed~ " & _
+            "~# HEENT~* Anterior fontanelle open, soft, and flat~* PERRL. No conjunctival erythema or scleral icterus. Red reflex present bilaterally~* " & _
+            "Normal canals. TMs pearly grey, normal light reflex/landmarks, not bulging~* No nasal drainage~* Mucous membranes moist. No oral lesions or " & _
+            "thrush~ ~# HEART~* S1, S2, regular rate, no skipped/early beats, no murmurs, rubs, or gallops~* Distal extremity pulses symmetric, no femoral delay. " & _
+            "Cap refill < 2 sec~ ~# LUNGS~* Breathing comfortably without tachypnea, nasal flaring, retractions, or accessory muscle use~* Lungs clear and " & _
+            "symmetric on auscultation; no stridor, wheezing, rhonchi, or crackles~ ~# ABDOMEN~* Nondistended; normoactive bowel sounds. Soft, nontender~* " & _
+            "No hepatomegaly, splenomegaly, or other palpable masses~ ~# MUSCULOSKELETAL~* Spine and paraspinal musculature are nontender with no obvious " & _
+            "abnormalities~* Joints and limbs are non-edematous and nontender. Normal range of motion~* No subluxation/dislocation/relocation of the hips~ ~# " & _
+            "NEURO: Moving all extremities spontaneously with normal tone and strength; no gross abnormalities~ ~# SKIN: No rashes, lesions, or petechiae~ ~# " & _
+            "GENITOURINARY: normal male phenotype (Tanner stage 1) with bilaterally descended testicles~ ~# GENITOURINARY: normal female phenotype (Tanner stage 1) " & _
+            "with no labial adhesions or hymenal obstruction~.~"
+        Suffix.Item(sel.PE2) = "# VITAL SIGNS: Vital signs and growth parameters reviewed~ ~# GENERAL APPEARANCE: Awake and alert; well-nourished and well-developed~ ~# " & _
+            "HEENT~* Normocephalic, atraumatic~* PERRL, EOMI. No conjunctival erythema or scleral icterus~* Normal canals. TMs pearly grey, light " & _
+            "reflex/landmarks visualized, not bulging~* No nasal drainage. Nasal mucosa is not pale or boggy~* Mucous membranes moist. No exudates, erythema, " & _
+            "or tonsillar hypertrophy. Tongue and uvula are midline~ ~# HEART~* S1, S2, regular rate, no skipped/early beats, no murmurs, rubs, or gallops~* " & _
+            "Distal extremity pulses symmetric, no femoral delay. Cap refill < 2 sec~ ~# LUNGS~* Breathing comfortably without tachypnea, nasal flaring, " & _
+            "retractions, or accessory muscle use~* Lungs clear and symmetric on auscultation; no stridor, wheezing, rhonchi, or crackles~ ~# ABDOMEN~* " & _
+            "Nondistended; normoactive bowel sounds. Soft, nontender~* No hepatomegaly, splenomegaly, or other palpable masses~ ~# MUSCULOSKELETAL~* Spine " & _
+            "and paraspinal musculature are nontender with no obvious abnormalities~* Joints and limbs are non-edematous and nontender. Normal range of motion~ " & _
+            "~# NEURO~* CN 2-12 intact~* Strength 5/5 in proximal and distal musculature. Grips 2+/symmetric~* Sensation intact to light touch~* Normal gait and " & _
+            "coordination with no ataxia~* Deep tendon reflexes 2+ in patellae~ ~# SKIN: No rashes, lesions, or petechiae~ ~# LYMPH NODES~* No palpable nodes in " & _
+            "the occipital, pre/post-auricular, submandibular, submental, anterior/posterior cervical, or supra/infraclavicular chains ~ ~# GENITOURINARY/PUBERTAL~* " & _
+            "Axillary: no hair or odor~* Genitals: normal male phenotype, Tanner stage 1; testicles descended bilaterally~* Genitals: normal female phenotype, " & _
+            "Tanner stage 1~* Breasts: Tanner stage 1~.~"
+
+
+"well-child visit", _
+".~Here for well-child check. Overall has been healthy, with no recent illnesses (except occasional URIs), ED visits, or acute appointments. No parental concerns.~ ~Current diet includes _ . Making at least 6 wet diapers per day, and stooling at least once per day. Age-appropriate sleep pattern. New skills include _ .~.", _
+"", _
+"A complete review of systems was performed and was negative, except as detailed above (minimum 10 systems).~.", _
+"A focused review of systems was performed and was negative, except as detailed above (< 10 systems).~.", _
+"* No known drug allergies~* No known environmental allergies~* No known food allergies~.", _
+"Reviewed and reconciled, including OTC/CAM meds~* No regular medication use~.", _
+".~* healthy~ ~* Birth: term birth, no chronic associated problems~* Development: reviewed; no history of delay~* Diet: reviewed; no special dietary measures~* Sleep: reviewed; appropriate for age~* Vaccinations: reviewed; on regular schedule~.", _
+".~* denies ~.", _
+".~POSITIVE FOR:~* none stated~ ~NEGATIVE FOR:~* sudden death~* genetic/metabolic disease~* birth defects~* kidney disease~* childhood deafness~.", _
+".~* Lives with both parents~* Pets: none~* Smoke exposure: no~* DOES NOT attend daycare~* Contact: ~.", _
+"* Receiving all immunizations on schedule~.", _
+"_ g~* term birth (_ wga)~* newborn metabolic, hearing, and SpO2 screen were normal~* prenatal history: uncomplicated~* delivery: uncomplicated SVD~* postnatal events: routine newborn discharge~.", _
+"Last updated: ~* developmental screen: ~* newborn screen: normal~* hearing: passed newborn screen, no concerns~* vision: no concerns~* dental: NOT receiving periodic dental care~* screening for anemia, lead, and TB risk: screen at 12 mo~* BMI: not overweight or obese~* lipid screen: not assessed~.", _
+"Age-appropriate guidance discussed, including but not limited to: lifestyle (nutrition, sleep hygiene, physical activity), safety, behavior, and discipline. Signs of illness and symptom management reviewed as appropriate.~.", _
+".~* age-appropriate diet with variety of foods ~* eats meals with family; not a picky eater and not skipping meals ~* fried/fatty/fast foods: ~* milk intake: ~* juice intake: ~* water intake: ~* caffeinated beverages: ~.", _
+".~# SLEEP ~* quantity: _ hrs ~* quality: onset within _ minutes; minimal awakenings, feels refreshed afterward, not falling asleep at school, no recurrent headaches ~* routine: no significant difference in weekday vs weekend sleep schedule ~* stimulants: no afternoon/evening caffeine, energy drinks, or stimulant use ~* distractors: has electronic devices in bedroom with loosely monitored but unrestricted access ~  ~# EXERCISE / SCREENTIME ~* overall active / sedentary lifestyle ~* gets at least 1 hour of sustained active exercise daily ( ) ~* spends more than 2 leisure hours/day with electronic devices~.", _
+"# HEADSSS EXAM~H: Lives with _. No concerns with family interaction~E: _th grade, not failing any classes~A: Hangs out with friends, no parties. Plays _~D: Denies current or prior use of tobacco, alcohol, marijuana, or other drugs (both illicit and prescription)~S: Not dating and not sexually active~S: Denies SI/HI~S: Feels safe at home and school~.", _
+"Screening for maternal depression with EPDS; total score = _ and 0 points for question 10.~.", _
+"# VITAL SIGNS: Vital signs and growth parameters reviewed~ ~# GENERAL APPEARANCE: Awake and alert; well-nourished and well-developed~ ~# HEENT~* Anterior fontanelle open, soft, and flat~* PERRL. No conjunctival erythema or scleral icterus. Red reflex present bilaterally~* Normal canals. TMs pearly grey, normal light reflex/landmarks, not bulging~* No nasal drainage~* Mucous membranes moist. No oral lesions or thrush~ ~# HEART~* S1, S2, regular rate, no skipped/early beats, no murmurs, rubs, or gallops~* Distal extremity pulses symmetric, no femoral delay. Cap refill < 2 sec~ ~# LUNGS~* Breathing comfortably without tachypnea, nasal flaring, retractions, or accessory muscle use~* Lungs clear and symmetric on auscultation; no stridor, wheezing, rhonchi, or crackles~ ~# ABDOMEN~* Nondistended; normoactive bowel sounds. Soft, nontender~* No hepatomegaly, splenomegaly, or other palpable masses~ ~# MUSCULOSKELETAL~* Spine and paraspinal musculature are nontender with no obvious abnormalities~* Joints and limbs are non-edematous and nontender. Normal range of motion~* No subluxation/dislocation/relocation of the hips~ ~# NEURO: Moving all extremities spontaneously with normal tone and strength; no gross abnormalities~ ~# SKIN: No rashes, lesions, or petechiae~ ~# GENITOURINARY: normal male phenotype (Tanner stage 1) with bilaterally descended testicles~ ~# GENITOURINARY: normal female phenotype (Tanner stage 1) with no labial adhesions or hymenal obstruction~.~", _
+"# VITAL SIGNS: Vital signs and growth parameters reviewed~ ~# GENERAL APPEARANCE: Awake and alert; well-nourished and well-developed~ ~# HEENT~* Normocephalic, atraumatic~* PERRL, EOMI. No conjunctival erythema or scleral icterus~* Normal canals. TMs pearly grey, light reflex/landmarks visualized, not bulging~* No nasal drainage. Nasal mucosa is not pale or boggy~* Mucous membranes moist. No exudates, erythema, or tonsillar hypertrophy. Tongue and uvula are midline~ ~# HEART~* S1, S2, regular rate, no skipped/early beats, no murmurs, rubs, or gallops~* Distal extremity pulses symmetric, no femoral delay. Cap refill < 2 sec~ ~# LUNGS~* Breathing comfortably without tachypnea, nasal flaring, retractions, or accessory muscle use~* Lungs clear and symmetric on auscultation; no stridor, wheezing, rhonchi, or crackles~ ~# ABDOMEN~* Nondistended; normoactive bowel sounds. Soft, nontender~* No hepatomegaly, splenomegaly, or other palpable masses~ ~# MUSCULOSKELETAL~* Spine and paraspinal musculature are nontender with no obvious abnormalities~* Joints and limbs are non-edematous and nontender. Normal range of motion~ ~# NEURO~* CN 2-12 intact~* Strength 5/5 in proximal and distal musculature. Grips 2+/symmetric~* Sensation intact to light touch~* Normal gait and coordination with no ataxia~* Deep tendon reflexes 2+ in patellae~ ~# SKIN: No rashes, lesions, or petechiae~ ~# LYMPH NODES~* No palpable nodes in the occipital, pre/post-auricular, submandibular, submental, anterior/posterior cervical, or supra/infraclavicular chains ~ ~# GENITOURINARY/PUBERTAL~* Axillary: no hair or odor~* Genitals: normal male phenotype, Tanner stage 1; testicles descended bilaterally~* Genitals: normal female phenotype, Tanner stage 1~* Breasts: Tanner stage 1~.~"

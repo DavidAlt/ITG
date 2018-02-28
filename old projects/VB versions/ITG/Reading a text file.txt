@@ -1,0 +1,27 @@
+# Reading from a text file to a list of strings
+
+Imports System.IO, System.Collections.Generic
+
+Module Tester
+    Sub Main()
+        Try
+            Dim line As String
+            Dim file_contents As New List(Of String)()
+
+            Using sr As New StreamReader("ALT-PLAY.txt")
+                Do
+                    line = sr.ReadLine()
+                    file_contents.Add(line)
+                Loop Until line Is Nothing
+            End Using
+
+            For Each txt As String In file_contents
+                System.Diagnostics.Debug.Print(txt)
+            Next
+
+        Catch ex As Exception
+            Console.WriteLine("Exception thrown: ")
+            Console.WriteLine(ex.Message)
+        End Try
+    End Sub
+End Module

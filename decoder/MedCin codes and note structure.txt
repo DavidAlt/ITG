@@ -1,0 +1,878 @@
+===============================
+MISCELLANEOUS NOTES/COMMENTS
+===============================
+UPDATED: 8/23/2016
+
+See files: medcinNode.cls, IConvert.cls
+
+Indentation key
+# = section heading/grouping
+"" = no indent on note
+"  " = indented on note
+"- " belongs to associated listing, and concatenates with others at this level
+
+
+===============================
+CHIEF COMPLAINT
+===============================
+Chief complaint		1718
+
+
+===============================
+REASON FOR VISIT
+===============================
+well infant/child	191169
+
+Newborn		281765
+2 week		66127
+1 mo		283047
+2 mo		281766
+4 mo		281767
+6 mo		281768
+9 mo		281769
+12 mo		281770
+15 mo		281771
+18 mo		281772
+24 mo		66129
+3 yr		281773
+4-6 yr		281774
+7-10 yr		281775
+11-12 yr	281776
+13-18 yr	281777
+
+
+===============================
+HISTORY OF PRESENT ILLNESS
+===============================
+  # 
+  - "The Patient is a _ year old _. (automatic)
+  - Source of information	2063
+  HPI				115033		Preliminary background HPI
+  Additional HPI		115033,AD	Administered preliminary background HPI
+  Meds reviewed/rec w/list			Meds R/R/list given	
+  Meds reviewed/rec w/o list	282606		Medication list reviewed with patient
+  Patient accompanied by	281088
+  Excellent general overall feeling	
+
+Attending physician FT		112342,AL	Allergy to HPI
+Pain assessment	FT		112342,A,0	Admission diagnosis of 		
+				112342,A,384	?384 is when values were modified?
+Recent hospitalizations	FT	115034,PF	Prophylactic supplemental HPI
+Feels safe FT			115034,AL	Allergy to supplemental HPI
+PHQ-2 (dep screen) FT		115034,A	Admission diagnosis of supplemental HPI
+Other anticipatory guid	FT	115034,C	Carrier of supplemental HPI
+Age appropriate handout	FT	115034,AV	Avoid supplemental HPI
+HEADSSS				115034
+
+
+===============================
+ALLERGIES
+===============================
+Allergies FT			122305,H	Allergy Free Text
+  NKDA						An allergy to drugs
+
+
+===============================
+CURRENT MEDICATION
+===============================
+Medicine list FT		195087		Current medication [Use for free text]
+
+
+===============================
+VACCINATIONS
+===============================
+Reviewed and current as of	195089,?	Possible vaccinations [Use for free text]
+
+40145    0  vaccinations - received influenza vaccine     
+
+
+===============================
+PAST MEDICAL/SURGICAL HISTORY
+===============================
+# Reported:
+  # Recent events: 
+  - Recent events		120233,H
+  - Med compliance		112173,H
+  # Medical: 
+  - Medical hx			120054,H	Reported medical history
+  # Surgical: 
+  - Surgical hx			3406,H		Surgical / procedural history
+  # Tests:
+  - Newborn hearing screen	124345,H	Newborn hearing screen was normal
+  # Exposure
+  - Exposure			3163,H
+  # Environmental exposure: 
+  - smoke exposure		5341,H		secondhand cigarette smoke exposure
+  - lead exposure
+  - lead(exposure-activities)	124122,H	Exposed to lead
+  - sibling w/lead poisoning	124123,H	Exposed to lead from a sibling or playmate with lead poisoning
+  # Dietary:
+  - Nutrition/Diet FT		120052,H	Reported dietary history
+  - Breastfeeding		4790,H		Infant is breastfeeding
+  - Bottlefeeding		4793,H		Infant is bottlefeeding
+  - sweating here too		124466,H	Infant is sweating during feeds
+  # Pediatric:
+  - birth weight		123077,H	Patient's birth weight
+  - Feeding history (0-23 m)	4260,H		Feeding history
+  - loss of milestones here too	3584,H		Psychomotor regression
+# Diagnoses:
+  Factor V deficiency				History of
+  Physical examination				History of
+
+
+===============================
+PERSONAL HISTORY
+===============================
+ 
+EFMP				122302,AD	Administered social history [use for free text]
+#
+- Lead: high risk ZIP code	124116		Living in a high lead risk ZIP code
+- Lead: house before 1950	124113		Housing was constructed before 1950
+- Lead: recent house renovation	124114		Housing was constructed before 1978 and recently renovated
+- Social Hx reviewed FT		122667		Social history reviewed
+# Diet: 
+- high fat snacks		123847		Current diet includes high fat snack foods
+- fast foods			123848		Current diet includes frequent 'fast foods'
+- fried foods			123849		Current diet includes fried foods
+- high-sugar beverages		123855		A high-sugar diet including high sugar beverages
+- fruits/veggies		5206		Eating _ than five servings of fruits and vegetables per day
+- ready for diet change		127751		Ready for diet changes
+- ounces of milk		4924		Ounces of milk per day
+# Behavioral: 
+- caffeine use			120045		Caffeine use
+- tobacco use			120047		Tobacco use
+# Habits:			120044
+- ready for lifestyle changes	127753		Ready for lifestyle changes
+- poor exercise habits		3738,H		Poor exercise habits
+# Education: 
+- school			123426		Currently in school
+- homeschool			127761		Home schooled
+# Activities:
+- screentime			4805		Per day watching television
+# Family:
+- enrolled in daycare		4169		Child enrolled in day-care
+- enrolled in preschool				Child enrolled in preschool
+# Sexual
+- birth control			605		Birth control is practiced
+#
+- History (JC extras)		5141
+- History
+
+
+
+===============================
+FAMILY HISTORY
+===============================
+  # Family medical hx			
+  - FT box			5098,F		Family medical history
+  FHx of sudden death		3512,F
+  FHx of metabolic disease	5373,F
+  FHx of 			5374,F		presumed other childhood diagnosis
+  FHx of 			3903,F		presumed other childhood diagnosis
+  FHx of 			5375,F		presumed other childhood diagnosis
+  No family history of ...
+  History Family history of history (category level)
+
+# Paternal
+# Maternal
+# Paternal grandfather's
+  - Factor V deficiency
+# Paternal grandmother's
+# Maternal grandfather's
+# Maternal grandmother's
+# Fraternal
+# Sororal
+# Son's
+# Daughter's
+# Paternal aunt's
+# Paternal uncle's
+# Maternal aunt's
+# Maternal uncle's
+
+30313,H,0,used FindTerm button,,\30313,F2,0,Also used FindTerm first,,\  
+30309,F2,0,,,\30309,F,0,,,\30309,F0,0,,,\30309,F1,0,,,\30309,F3,0,,,\30309,F4,0,,,\30309,F5,0,,,\30309,F6,0,,,\30309,F7,0,,,\30309,F8,0,,,\30309,F9,0,,,\30309,FJ,0,,,\30309,FK,0,,,\30309,FL,0,,,\30309,FM,0,,,\
+
+===============================
+REVIEW OF SYSTEMS
+===============================
+Free text		112344
+Military Service
+- Currently deployed	282997
+- Visit deploy related	281711
+Systemic		1878
+- fever			5
+- pain			283263
+Head			1879
+Neck			2903
+Eyes			2901
+Otolaryngeal		2902
+Breasts			1884
+Cardiovascular		1881
+Pulmonary		1880
+Gastrointestinal	1882
+Genitourinary		1883
+- urinary sx		2917
+- female genital sx	2916
+- menarche		115904
+- menses		115905
+Endocrine		1887
+Hematologic		1889
+Musculoskeletal		1886
+Neurological		1885
+Psychological		1891
+- sleep disturbance	1155
+- suicidal ideations	112224
+- homicidal ideations	1223
+Skin			1888
+Pediatric Screening	291972
+- parental concerns	282757
+Allergic/Immunologic	282873
+
+
+===============================
+PHYSICAL FINDINGS
+===============================
+(Physical examination category: 6000)
+
+Other physical findings	208847		Physical findings [Use for free text]
+
+= Vital Signs (specific measurements: temp, pain, RR, PR)
+Vital SIgns/Measurements			Value		Date
+Axillary temperature				98 F		Apr 16, 2014
+RR						18 breaths/min	Apr 16, 2014
+PR						75 bpm		Apr 16, 2014
+Moderate pain level by numeric scale rating -	6		Apr 1, 2014
+ for 5 days
+
+
+= General		9308
+  - Physical examination (additional physical findings, 2nd FT box)
+
+= Vital Signs			6001
+  - temperature			6002
+Pulse Rate			Value
+Pulse rate while sitting	60 bpm
+  -
+  - RR					6021
+  - PR					6034
+  - blood pressure		6045
+  - Pain level
+  - measurements		297590
+  - reviewed			195992
+
+= Standard Measurements	240096
+  - weight				6063
+  - BSA					11729
+  - BMI					9300
+  - height				6071
+  - body length			9952
+  - head circumference	10022
+
+= General Appearance	9307
+  - well-appearing		9308
+  - awake				10023
+  - alert				10011
+  - in NAD				10024
+
+= Head					6369
+  # Appearance
+  - fontanelle open		172413
+  - fontanelle flat		265655
+
+= Neck					6908
+  # Suppleness			6909
+  # Thyroid				6920
+
+= Eyes					6425
+  # General/bilateral
+    - normal eyes
+    # Pupils
+    - PERRL				294205
+    # Sclera
+    - nml sclera		6482
+  - vision assessment		6577
+
+= Ears, Nose, Throat		6368
+
+= Ears				6675
+  # General/bilateral
+    # External canal
+    - external canal		266410
+
+= Nose				6721
+
+= Oral Cavity			6751
+  # Lips			6758
+  # Teeth			6782
+  # Buccal mucosa		240067	(.. are moist etc)
+
+= Pharynx			6851
+  # Oropharynx		
+  - oropharynx			62488
+  - tonsils			6840
+  - tonsillar enlargement	9343
+
+64974,,0,enlarged tonsils with severity of obstruction of (xxx), ,\|
+6846,,0,no tonsilar exudate,N,\|
+6840,,0,normal tonsils,N,\|
+
+
+= Lymph Nodes			6963
+
+= Chest					6982
+
+= Breasts				7065
+
+= Lungs					7010
+  - auscultation		7041
+
+= Cardiovascular
+  # System				7105
+  # Inspection			295618
+  # JVD					7252
+  # Auscultation		295619
+  # Heart Sounds		7144
+  # Murmurs				7180
+  # Palpation			295620
+  # Percussion			295621
+  # Carotid Arteries	206283
+  # Arterial Pulses		7293
+  - equal pulses		7293
+  - carotid				7296
+  - brachial			7299
+  - radial				7302
+  - femoral				7305
+  - PT pulses			7309
+  - DP pulses			7310
+  # Peri. vascular		295622
+  # Devices				290961
+
+= Back					202199
+  - spasm				208496
+
+= Abdomen				7358
+  # Visual Inspection	7359
+  - distended			7376
+  # Auscultation		68115
+  - bowel sounds		7377
+  # Palpation			68114
+  - soft				206271
+  - nontender			7398
+  - no mass				7413
+  # Percussion			7381
+  # Liver				7427
+  # Spleen				7433
+
+= Urinary System		7447
+
+= Genitalia		
+  # Female genitalia 	7523
+  # external genitalia	7524
+  # vagina				7552
+  # Male genitalia		7459
+  # Penis				7460
+  # Scrotum				7497
+  # Testes				7505
+
+= Perineum				262025
+
+= Rectal				11525
+  - rectum				7614
+  - anus				7630
+
+= MS System				7649
+  # General/bilateral
+  - MS system			7649
+  # Other
+    # General/bilateral
+    - muscle tenderness	7663
+155021,,0,no hip instability,N,\|
+169330,,0,no hip subluxation,N,\|
+169329,,0,no hip dislocation,N,\|
+169356,,0,Galeazzi`s sign was not observed,N,\|
+67288,,0,negative ortolani,N,\|
+67290,,0,negative Barlow,N,\|
+67289,,0,normal hip maneuvers,N,\| "Hip maneuvers were performed"
+
+7987,,0,no scoliosis,N,\|
+7986,,0,thoracolumbar spine had a normal appearance,N,\|
+
+
+
+= Neurological			8202
+  - mental status		8364
+  - cranial nerves		8494
+  - sensation			8615
+  - motor				8913
+  - coord/cerebellar	9021
+  - gait/stance			9035
+  - reflexes			9050
+  - balance				164806
+  - tone				8942
+
+= Psychiatric			296257
+  - appearance			8203
+  - behavior			8223
+  - mood				8340
+  - affect				8308
+
+297127,,0,family behavior abnormal, ,\|
+297129,,0,family dynamics dysfunctional, ,\|
+
+
+
+= Skin					6142
+  - general appearance			10013
+  - color/pigmentation			6079
+  - lesions				6143
+  - dry					6116
+
+= Hair					6323
+
+= Nails					6345
+  #
+  - clubbing			6346
+  - pitting				6347
+
+= Growth and Development			64675
+  #
+  - Performed Growth and development (ASQ)	64675,PD
+  - Growth and development (MCHAT)		64675
+  - milestones assessment			9864
+  - delayed milestones				11465
+  - growth parameters				209275
+  # Sexual Maturation				11174
+  - male genital development			240479
+  - male pubic hair				209272
+
+296253   0  physical findings - Presence of Devices - Patient not examined on this visit  
+
+
+===============================
+TESTS			102905
+===============================
+
+24891    0  tests - laboratory studies - free text     
+29378    0  tests - Pulmonary Function tests: Spirometry     
+13074    0  tests - woods light     
+372359   0  tests - Psychometric - MCHAT     
+22628    0  tests - Psychometric - psychometric developmental tests     
+372574   0  tests - Psychometric - emotional/behavioral assessment     
+13176    0  tests - Psychometric - depression scale     
+328659   0  tests - Laboratory Studies - PHQ-9     
+328496   0  tests - Laboratory Studies - Questionnaire     
+13102    0  tests - Sleep Testing - a sleep study was performed     
+22234    0  tests - Electrocardiogram - a 12-lead ECG was performed     
+24890    0  tests - Imaging - Imaging studies     
+14532    0  tests - Imaging - an ultrasound was performed     
+13639    0  tests - Imaging - An X-ray was performed     
+89045    0  tests - Imaging - Other imaging studies     
+102905   0  tests - General - tests   
+
+TB screening FT				220255,AD
+Pertinent Labs FT			220255
+Other Procedures/Studies FT		184603
+Depression screening/monitoring FT	186675
+# Blood Gas Analyses Were Performed:
+- # Metabolic Tests
+  - Total serum bilirubin level, TCB	183431	
+Labs			120		Tests [Use for free text]		unverified
+Procedures		360		Test results [Use for free text]	unverified
+Imaging			490		Test order [Use for free text]		unverified
+  
+
+TSWF/ASQ	64675,PD	Physical findings -> Growth And Development -> Performed Growth and development
+TSWF/MCHAT-R	64675		Physical findings -> Growth And Development -> Growth and development
+TSWF/EPDS	225454		Tests -> Laboratory Studies: -> Psychometric -> Edinburgh postnatal depression scale.
+TSWF/PHQ-2/POS	115034,AD	HPI -> administered supplemental HPI [use for free text]
+TSWF/PHQ-2/NEG	115034,A	HPI -> admission diagnosis of supplemental HPI [use for free text]
+TSWF/PHQ-9/A	220255,PU	Tests -> patient refused tests [use for free text].
+TSWF/PSC	220255,OP	Tests -> order postponed for tests [use for free text] (Pediatric Symptoms Checklist)
+TSWF/SCARED	220255,O	Tests -> ordered tests [use for free text] (Screen for Child Anxiety Related Disorders)
+
+
+===============================
+ASSESSMENT
+===============================
+
+359965   0  assessment - acute respiratory tract infection     
+32881    0  assessment - asthma     
+275459   0  assessment - acute otitis media     
+37511    0  assessment - acute otitis externa     
+91278    0  assessment - acute pharyngitis     
+90242    0  assessment - gastrointestinal infections     
+38250    0  assessment - esophageal reflux     
+230057   0  assessment - constipation     
+332633   0  assessment - neonatal skin conditions     
+95175    0  assessment - neonatal jaundice     
+332608   0  assessment - neonatal esophageal reflux     
+35721    0  assessment - neonatal feeding problems     
+278551   0  assessment - infant feeding problems     
+272390   0  assessment - fussy infant     
+34397    0  assessment - acne vulgaris     
+33115    0  assessment - atopic dermatitis     
+310699   0  assessment - eczema     
+33125    0  assessment - contact dermatitis     
+35831    0  assessment - e.tox     
+33126    0  assessment - seborrheic dermatitis     
+34371    0  assessment - diaper rash     
+90182    0  assessment - fungal dermatological conditions     
+32556    0  assessment - sprain     
+231151   0  assessment - strain     
+231164   0  assessment - back strain     
+34482    0  assessment - acquired pes planus     
+1000116  0  assessment - tension headache     
+90006    0  assessment - headache syndromes     
+31885    0  assessment - concussion     
+32643    0  assessment - ADHD     
+38372    0  assessment - feeding disorder of infancy / early childhood     
+36309    0  assessment - depression     
+338074   0  assessment - sleep disorder     
+313936   0  assessment - failure to thrive as newborn     
+38610    0  assessment - failure to thrive in childhood     
+276459   0  assessment - problem concerning behavior of child     
+32777    0  assessment - generalized anxiety disorder     
+32788    0  assessment - suicide risk     
+32791    0  assessment - anxiety disorder NOS     
+38175    0  assessment - viral syndrome     
+30320    0  assessment - anemia     
+30322    0  assessment - iron deficiency anemia     
+31869    0  assessment - hay fever     
+39923    0  assessment - atopic disorders     
+314386   0  assessment - anxiety (from the nursing diagnoses section\\\\\\\\   ``self-concept``)     
+313652   0  assessment - acute nasopharyngitis     
+31071    0  assessment - common cold     
+30791    0  assessment - allergic rhinitis     
+30790    0  assessment - rhinitis     
+34963    0  assessment - cerumen impaction     
+33472    0  assessment - functional murmur     
+34102    0  assessment - croup     
+34845    0  assessment - normal routine history and physical     
+93494    0  assessment - normal routine history and physical adolescent (12 - 17)     
+91334    0  assessment - normal routine h&p well-child (6 - 12)     
+91333    0  assessment - normal h&p preschool (3 - 6)     
+91332    0  assessment - normal h&p well-baby (28 days - 2 yr)     
+336329   0  assessment - normal h&p neonatal (birth - 28 days)     
+35832    4  assessment - free text     
+292869   0  assessment - delayed milestones     
+278558   0  assessment - language was delayed     
+278503   0  assessment - neonatal vomiting     
+338676   0  assessment - infant conditions     
+99146    0  assessment - newborn     
+34552    0  assessment - tongue tie     
+213225   0  assessment - congenital nevus flammeus (port-wine stain)     
+272075   0  assessment - port wine nevus (nevus flammeus)     
+272071   0  assessment - congenital\\\\\\\\   pigmentary skin anomalies     
+272076   0  assessment - strawberry nevus (capillary hemangioma)     
+312569   0  assessment - congenital accessory skin tags     
+211334   0  assessment - anomalies of the skin     
+35715    0  assessment - congenital hydrocele     
+34485    0  assessment - acquired deformity     
+34530    0  assessment - acquired deformity of head     
+38286    0  assessment - tibial torsion (intoeing)     
+
+  Diagnoses, syndromes and conditions	39448	Diagnoses, syndromes and conditions
+  Newborn screen			211372	Neonatal endocrine and metabolic disturbances
+
+
+===============================
+THERAPY			40000
+===============================
+
+259810   0  therapy - problem     
+197086   0  therapy - need for vaccination     
+309803   0  therapy - underimmunization     
+303539   0  therapy - vaccination not carried out due to parental refusal     
+40077    0  therapy - medication instruction     
+195088   4  therapy - therapy free text     
+75222    0  therapy - basic management principles (for some reason included influenza virus vaccine therapy)     
+133455   0  therapy - supportive care     
+133350   0  therapy - duration of the encounter     
+133356   0  therapy - coordination of care     
+133355   0  therapy - counseling     
+252660   0  therapy - risks\\\\\\\\   benefits\\\\\\\\   and limitations discussed and understood     
+133427   0  therapy - newborn care     
+342453   0  therapy - mental health screening assessment     
+342460   0  therapy - mental health care management     
+342458   0  therapy - mental health treatment management     
+42477    0  therapy - psychoactive medication management     
+341987   0  therapy - recommended dietary changes     
+340803   0  therapy - nutrition management     
+132935   0  therapy - education and instructions     
+308166   0  therapy - support group for new mothers     
+342433   0  therapy - administrative services     
+
+  Fluoride			191165		Need for prophylactic fluoride administration
+  Medical supplies		75133		Medical supplies and equipment
+  Explanation of plan		259808		Explanation of plan
+  - Therapy FT
+  Information sheet/handout	196996
+  Contingency plan: start meds	300082
+
+
+===============================
+COUNSELING/EDUCATION
+===============================
+
+78725    0  education and counseling     
+78541    0  anticipatory guidance     			"_Therapy_ ~ * Anticipatory guidance: "
+78542    0  discussed safety practices     
+308482   0  discussed sleeping position on back     
+252295   0  discussed shaken baby syndrome     
+139427   0  discussed protection of joints     
+139428   0  discussed proper body movements/mechanics     
+343755   0  discussed safety rules with others     
+308495   0  discussed age-appropriate supervision     
+308502   0  discussed bullying     
+308503   0  discussed seeking help     
+78682    0  discussed risk-taking behavior     
+78543    0  discussed nutritional needs     
+78575    0  discussed use of supplements     
+78576    0  discussed use of vitamins     
+308486   0  discussed age-appropriate diet
+78588    0  discussed drinking juices     
+78586    0  discussed solid foods     
+301164   0  discussed appetite variations     
+78624    0  discussed self-feeding     
+78652    0  discussed food jags     
+78679    0  discussed maintaining healthy weight     
+308484   0  discussed maintaining adequate hydration     
+343747   0  discussed infant bonding     
+343736   0  discussed independent play     
+78610    0  discussed constructive outlets for explorative behavior     
+343738   0  discussed reading     
+343739   0  discussed daily reading     
+78638    0  discussed reading bedtime stories     
+343752   0  discussed asking child questions while reading     
+78650    0  discussed peers     
+78665    0  discussed role model emulation     
+343749   0  discussed problem solving     
+78649    0  discussed electronic media     
+343716   0  discussed behavior     
+343717   0  discussed discipline     
+343740   0  discussed redirection     
+343741   0  discussed praise     
+343742   0  discussed positive parenting     
+343745   0  discussed nighttime sleep routine     
+343750   0  discussed providing opportunities for success     
+343751   0  discussed providing choices     
+343756   0  discussed self-control     
+343718   0  discussed temperament     
+78582    0  discussed talking to baby     
+343757   0  discussed physical development     
+343759   0  discussed tummy time     
+343758   0  discussed body changes     
+343760   0  discussed sexuality     
+301166   0  discussed education and career     
+78692    0  discussed activities     
+78673    0  discussed sports     
+343764   0  discussed exercise     
+342022   0  recommendation regarding activities     
+41871    0  patient education (free text)     			"_Counseling/Education_ ~ * Patient education"
+41875    0  patient education about a proper diet     
+191417   0  education about modifying recipes     
+191419   0  education about changing eating habits     
+341122   0  patient education about dietary needs     
+342369   0  patient education about nutrition     
+341166   0  patient education about exercise     
+342084   0  patient education about physical activity benefits     
+342419   0  patient education about weight control     
+258735   0  patient education about an action plan     
+258736   0  patient education about an asthma action plan     
+196999   0  patient education about medication     
+258075   0  patient education about injury prevention     
+197095   0  patient education about the proper use of medications     
+307879   0  patient education about mental health     
+342109   0  patient education about emotional support     
+190620   0  patient education about problem-solving strategies     
+190623   0  patient education about attention and concentration activities     
+190625   0  patient education about orthopedic activities     
+308016   0  patient education about allergies     
+193320   0  patient education about asthma     
+193323   0  patient education about asthma - exposure to triggers     
+193322   0  patient education about asthma - metered dose inhaler     
+309911   0  childcare instruction     
+41998    0  parent education     
+78566    0  parent education about growth and development     
+78561    0  parent education about well-infant care     
+78565    0  parent education about basic baby care     
+308505   0  discussed calming techniques     
+78570    0  parent education about feeding     
+308512   0  parent education about breast feeding     
+308513   0  parent education about bottle feeding     
+342331   0  parent education about toddler nutrition     
+78631    0  parent education about the toddler stage     
+78567    0  parent education about skin care     
+78666    0  parent education about dental visits     
+78584    0  parent education about immunizations     
+78568    0  parent education about sick infant care     
+78562    0  parent education about medication use     
+308514   0  parent education about emotional support     
+308515   0  parent education about parental self-care     
+308520   0  parent education about baby-blues     
+308521   0  parent education about adequate sleep     
+308522   0  parent education about time for self/partner     
+308523   0  parent education about accepting help     
+308516   0  parent education about family time     
+40006    0  patient counseling     
+78715    0  inquiry and counseling about medication administration and compliance     
+71099    0  inquiry and counseling about family functioning     
+259066   0  counseling about issues related to effects of therapy     
+340506   0  counseling for depression     
+342247   0  education\\\\\\\\   guidance\\\\\\\\   and counseling     
+342248   0  education\\\\\\\\   guidance\\\\\\\\   and counseling about dietary management     
+342249   0  education\\\\\\\\   guidance\\\\\\\\   and counseling about exercises     
+342345   0  education\\\\\\\\   guidance\\\\\\\\   and counseling about food     
+78544    0  discussed concerns     
+78571    0  discussed concerns about eating     
+78573    0  discussed concerns about elimination     
+78574    0  discussed concerns about sleeping     
+308497   0  discussed concerns about night-awakening     
+78557    0  discussed concerns about fevers     
+78572    0  discussed concerns about crying     
+78590    0  discussed concerns about teething     
+78633    0  discussed concerns about toilet training     
+78628    0  discussed concerns about increasing independence     
+78602    0  discussed concerns about properly fitting shoes     
+78634    0  discussed concerns about temper tantrums     
+78648    0  discussed concerns about bedtime     
+78645    0  discussed concerns about disobedience     
+78658    0  discussed concerns about nightmares     
+78659    0  discussed concerns about bedwetting     
+78660    0  discussed concerns about school readiness     
+78662    0  discussed concerns about discipline     
+252302   0  discussed concerns about discipline consistency     
+252303   0  discussed concerns about discipline using time out     
+252304   0  discussed concerns about setting disciplinary limits     
+308491   0  discussed concerns about age-appropriate discipline     
+78672    0  discussed concerns about school performance     
+308479   0  discussed concerns about study habits     
+308480   0  discussed concerns about stress management     
+195369   0  discussed concerns about sexual maturation     
+78685    0  discussed concerns about acne     
+71076    0  discussed concerns about inadequate physical activity     
+78686    0  discussed concerns about depression     
+78687    0  discussed concerns about suicide     
+41999    0  parent counseling     
+308154   0  family counseling     
+195090   4  free text     
+79656    0  parent reassurance     
+
+
+===============================
+DISCUSSION
+===============================
+
+195091   4  discussion free text    
+
+
+===============================
+PLAN
+===============================
+
+19467    4  plan free text     
+
+
+===============================
+OTHER
+===============================
+
+195092   4  other free text     
+
+
+===============================
+PRACTICE MANAGEMENT	
+===============================
+
+42435    0  Preventive medicine services
+42450    0  administration of developmental tests     
+307343   0  major depressive disorder care plan documented     
+308549   0  symptom management care plan documented (sentence combines/warps with other practice management findings)     
+304751   0  care plan documented     
+340010   0  medication information     
+303103   0  test results documented and reviewed     
+304142   0  topical preparations prescribed     
+304147   0  systemic corticosteroids     
+303735   0  antibiotic therapy     
+302244   0  therapy prescribed for long-term asthma management     
+303145   0  inhaled bronchodilator prescribed     
+342334   0  monitoring of chronic disease     
+308620   0  asthma discharge plan provided     
+342327   0  evaluation of psychosocial impact on plan of care     
+304162   0  counseling/education     
+342094   0  activity/exercise education prescribed     
+309874   0  counseling and surveillance     
+342601   0  stress management surveillance     
+307377   0  counseling on treatment options     
+307386   0  counseling on side effects of medication     
+307384   0  counseling about safety issues     
+309567   0  counseling     
+45770    0  risk factor counseling individual\\\\\\\\   45 minutes     
+45769    0  risk factor counseling individual\\\\\\\\   30 minutes     
+45768    0  risk factor counseling individual\\\\\\\\   15 minutes     
+45767    0  prev med / risk factor counseling provided     
+45771    0  risk factor counseling individual\\\\\\\\   60~ minutes     
+45774    0  prev medicine administration of health risk questionnaire     
+304758   0  risk factors assessed     
+343763   0  risk factors assessed using HEADSS     
+259763   0  internet medical services - primary physician     
+303566   0  internet medical services by qualified nonphysician healthcare professional     
+303565   0  internet medical services     
+42509    0  case management services     
+42510    0  case management conference with patient / family (no CPT)     
+42513    0  case management conference to coordinate care     
+42516    0  case management health care provider telephone call to patient / providers     
+309573   0  coordination of care services     
+72538    0  prolonged physician service without direct patient contact     
+72537    0  prolonged physician service with direct patient contact     
+133357   0  total face to face time     
+133358   0  counseling and coordination of care was more than 50% of encounter time   
+
+
+
+
+
+==============================
+UNSORTED!
+==============================
+
+Tabbed items not accessible on males
+	4177,H,0,,N,\   Prenatal: poor prenatal care
+	4488,H,0,,N,\	Prenatal: smoking during pregnancy
+	3776,H,0,,N,\	Prenatal: alcohol use during pregnancy
+	4186,H,0,,N,\	Prenatal: diabetes during pregnancy
+	4410,H,0,,N,\	Prenatal: genital herpes during pregnancy
+
+	4183,H,0,,N,\	Prenatal: preeclampsia during pregnancy
+	4184,H,0,,N,\	Prenatal: eclampsia during pregnancy
+	4191,H,0,,N,\	Prenatal: polyhydramnios during pregnancy
+	4192,H,0,,N,\	Prenatal: oligohydramnios during pregnancy
+	4883,H,0,,N,\	Prenatal: hypothyroidism during pregnancy
+	
+	3582,H,0,,N,\	Prenatal: maternal age 35+ during pregnancy
+	129249,H,0,, ,\	Prenatal: prenatal record complete
+	3820,H,0,,N,\	Prenatal: IV drug use during pregnancy
+	124104,H,0,,N,\	Prenatal: prepartum use of narcotics
+	120231,H,0,, ,\	Prenatal: prenatal maternal history
+
+129307,H,0,, ,\	Prenatal: prenatal fetal history
+124101,H,0,, ,\	Prenatal: prenatal exposure
+124175,H,0,,N,\	Pediatric: Pre-existing maternal condition
+124166,H,0,,N,\	Pediatric: substance use by mother
+124226,H,0,,N,\	Pediatric: mother's antepartum labs showed GBS (+)
+
+4884,H,0,, ,\	Pediatric: (mother's antepartum labs) showed blood type
+124229,H,0,,N,\	Pediatric: (mother's antepartum labs) showed anti-Rh (+)
+124165,H,0,, ,\	Pediatric: maternal-fetal blood type incompatibility
+123079,H,0,, ,\	Pediatric: Maternal labor history (unpredictable - default text disappears with some combinations)
+124188,H,0,, ,\	Pediatric: born by vaginal delivery
+124192,H,0,, ,\	Pediatric: born by cesarean section
+4919,H,0,,N,\	Pediatric: the personal birth history was abnormal (unpredictable)
+124163,H,0,, ,\	Pediatric: mother's age at delivery
+123077,H,0,, ,\	Pediatric: patient's birth weight
+	3596,H,0,, ,\	Pediatric: a premature birth
+
+128215,H,0,, ,\	Pediatric: discharge weight
+4252,H,0,,N,\	Pediatric: difficulty feeding
+4407,H,0,,N,\	Pediatric: failure to gain weight
+4260,H,0,, ,\	Pediatric: feeding history

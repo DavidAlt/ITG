@@ -1,0 +1,2 @@
+V3^Pregnancy Test Negative--PRM^1^False^^^1099041^2017181^||||||L\\^V3,pregnancy test neg ccj,1,True,,\|112176,,0,Patient requests a pregnancy test.,,\|115033,,4,CONTACT PHONE NUMBER IS : 830-703-0816
+  Pt informed she will be contacted with results within the next 48 hours.,,\|1500,,0,,,\|^||||||

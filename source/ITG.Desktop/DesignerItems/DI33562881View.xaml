@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:di="clr-namespace:ITG.Desktop.DesignerItems"
+                    xmlns:converters="clr-namespace:DALT.Controls.Converters">
+
+    <!-- 33562881 object -->
+    <DataTemplate DataType="{x:Type di:DI33562881VM}">
+        <Grid ShowGridLines="False"
+          Height="19" Width="{Binding Width}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle IsHitTestVisible="False" Grid.ColumnSpan="3"
+                       Width="{Binding Width}" Height="{Binding Height}"
+                       Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+
+            <Image Grid.Column="0" 
+                   HorizontalAlignment="Left" 
+                   IsHitTestVisible="False"
+                   Source="pack://application:,,,/Resources/Components/Checkbox-X-15x15.png" 
+                   Stretch="None" 
+                   Margin="0 1 5 1"/>
+
+            <TextBlock Grid.Column="1"
+                       Margin="0 1 0 0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       IsHitTestVisible="False"
+                       FontFamily="{Binding Font}"
+                       FontSize="{Binding FontSize}"
+                       FontStyle="{Binding FontStyle}" 
+                       Text="{Binding D_Caption}" />
+            
+            <TextBox Grid.Column="2" Margin="0 0 2 0"
+                     IsHitTestVisible="False"
+                     HorizontalAlignment="Right"
+                     Width="{Binding PF_InlineTextboxWidth}"
+                     Text="{Binding D_Content}" />
+
+        </Grid>
+
+    </DataTemplate>
+
+</ResourceDictionary>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="DALT.ITG.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ctrl="clr-namespace:DALT.ITG.Controls;assembly=DALT.ITG.Controls"
+        Title="Shell" Height="600" Width="800">
+    <Grid>
+
+    </Grid>
+</Window>

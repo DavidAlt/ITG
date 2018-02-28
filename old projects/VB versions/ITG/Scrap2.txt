@@ -1,0 +1,143 @@
+Imports System.Collections.Generic, System.Text
+
+Namespace ITG
+
+    Public Class ITGFormTemplate
+        ' Members
+        Private Property TemplateSignature As String          ' Contains type of template and version number
+        Private Property TemplateIdentification As String     ' Contains template name, environment, and author
+        Private Property TemplateDimensions As ITGFormItem    ' Contains total template dimensions
+        Private Property TemplateParameters As ITGFormItem    ' Contains tab names
+        Private Property TemplateLeftovers As ITGFormItem     ' Never did figure out what line 5 was for ...
+
+        Public Property ITGTabs As New List(Of ITGTab)    ' Contains the template's tabs
+
+        ' Constructor
+        Sub New()
+
+        End Sub
+
+        ' Procedures
+        Public Overrides Function ToString() As String
+            Dim sb As New StringBuilder()
+            ' Build the template header
+            sb.Append(TemplateSignature)
+            sb.Append(TemplateIdentification)
+            sb.Append(TemplateDimensions.ToString())
+            sb.Append(TemplateParameters.ToString())
+            sb.Append(TemplateLeftovers.ToString())
+
+            ' Add the items from each tab
+            For Each t In ITGTabs
+                sb.Append(t.ToString())
+            Next
+            Return sb.ToString()
+        End Function
+
+    End Class
+
+    Public Class ITGTab
+        ' Members
+        Public Property TabIndex As Integer
+        Public Property TabName As String
+        Public Property Items As List(Of ITGFormItem)    ' Contains the tab's GUI elements
+
+        ' Constructor
+        Sub New(ByVal _items As List(Of ITGFormItem))
+            Items = _items
+        End Sub
+
+        Sub New()
+            Items = New List(Of ITGFormItem)
+        End Sub
+
+        ' Procedures
+        ' Validate if a ITGFormItem has the correct tab number
+        Private Function ValidateITGFormItemTabNumber()
+            Return True
+        End Function
+
+        Public Overrides Function ToString() As String
+            Dim sb As New StringBuilder()
+            For Each formitem In Me.Items
+                sb.AppendLine(formitem.ToString())
+            Next
+            Return sb.ToString()
+        End Function
+    End Class
+
+    Public Class ITGFormItem
+        ' Properties
+        Public Property Tab As Integer
+        Public Property Left As Integer
+        Public Property Top As Integer
+        Public Property Right As Integer
+        Public Property Bottom As Integer
+        Public Property MedcinID As Integer
+        Public Property ControlType As Long
+        Public Property Prefix As String
+        Public Property ItemData As String
+        Public Property Description As String
+
+        ' Constructors
+        Sub New(ByVal _combinedargs As String)
+            Dim args As String() = Split(_combinedargs, ",")
+            Tab = CInt(args(0))
+            Left = CInt(args(1))
+            Top = CInt(args(2))
+            Right = CInt(args(3))
+            Bottom = CInt(args(4))
+            MedcinID = CInt(args(5))
+            ControlType = CLng(args(6))
+            Prefix = args(7)
+            ItemData = args(8)
+            Description = args(9)
+        End Sub
+
+        Sub New(ByVal _tab As Integer, _left As Integer, _top As Integer, _right As Integer, _bottom As Integer, _
+                _medcinID As Integer, _ctrl As Long, _prefix As String, _itemdata As String, _description As String)
+            Tab = _tab
+            Left = _left
+            Top = _top
+            Right = _right
+            Bottom = _bottom
+            MedcinID = _medcinID       ' needs validation
+            ControlType = _ctrl        ' needs validation
+            Prefix = _prefix           ' probably needs "" added
+            ItemData = _itemdata       ' probably needs "" added
+            Description = _description ' probably needs "" added
+        End Sub
+
+        Sub New()
+            ' Default data for testing
+            Tab = 1
+            Left = 0
+            Top = 0
+            Right = 100
+            Bottom = 100
+            MedcinID = 7005
+            ControlType = ITGControlType.Expander
+            Prefix = """|||||||0|0||0|0|||0|||0|0|0|0|0||||"""
+            ItemData = """U=T|T=T"""
+            Description = """FULL Exam~Starting first line of default text here."""
+        End Sub
+
+        ' Procedures
+        ' Needs a way to set options, font, and other relevant items within prefix, itemdata, and description
+
+        Public Overrides Function ToString() As String
+            Dim sb As New StringBuilder()
+            sb.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", _
+                              Tab, Left, Top, Right, Bottom, MedcinID, _
+                              ControlType, Prefix, ItemData, Description)
+            Return sb.ToString()
+        End Function
+
+
+    End Class
+
+End Namespace
+
+
+
+        Public Tabs As New Dictionary(Of Integer, ITGTab)

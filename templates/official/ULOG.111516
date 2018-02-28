@@ -1,0 +1,6 @@
+101536.MXDUL-091Z9N!?proc.1248: 11152016: TUXEDO Version 6.5 32-bit Windows.
+101536.MXDUL-091Z9N!?proc.1248: LIBWSC_CAT:1037: ERROR: Network message receive failure
+101536.MXDUL-091Z9N!?proc.1248: LIBWSC_CAT:1001: ERROR: Unable to get reply
+101617.MXDUL-091Z9N!?proc.1248: LIBWSC_CAT:1011: ERROR: tpcall() message send failure
+101624.MXDUL-091Z9N!?proc.1248: LIBWSC_CAT:1011: ERROR: tpcall() message send failure
+101624.MXDUL-091Z9N!?proc.1248: LIBWSC_CAT:1025: ERROR: Unable to send tpterm() request
